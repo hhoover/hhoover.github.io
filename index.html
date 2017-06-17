@@ -118,6 +118,10 @@ permalink: /
                     {% if site.meetup_username %}
                     <li><a class="fa fa-2x fa-meetup" href="https://www.meetup.com/members/{{ site.meetup_username }}/"><span class="description">Meetup</span></a></li>
                     {% endif %}
+                    
+                    {% if site.amazon_wishlist %}
+                    <li><a class="fa fa-2x fa-amazon" href="http://a.co/{{ site.amazon_wishlist }}/"><span class="description">Amazon WL</span></a></li>
+                    {% endif %}
 
                     {% if site.public_key_url %}
                     <li><a class="fa fa-2x fa-key" href="{{ site.public_key_url }}"><span class="description">PGP Key</span></a></li>
