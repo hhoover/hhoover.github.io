@@ -31,12 +31,20 @@ permalink: /
             <h3>{{ site.description }}</h3>
 
                 <ul>
-                    {% if site.extra_life %}
-                    <li><a class="fa fa-2x fa-gamepad" href="https://www.extra-life.org/index.cfm?fuseaction=donorDrive.participant&participantID={{ site.extra_life }}"><span class="description">Extra-Life</span></a></li>
+                    {% if site.twitter_username %}
+                    <li><a class="fa fa-2x fa-twitter" href="https://twitter.com/{{ site.twitter_username }}"><span class="description">Twitter</span></a></li>
+                    {% endif %}
+                    
+                    {% if site.linkedin_username %}
+                    <li><a class="fa fa-2x fa-linkedin" href="https://linkedin.com/in/{{ site.linkedin_username }}"><span class="description">LinkedIn</span></a></li>
                     {% endif %}
                     
                     {% if site.github_username %}
                     <li><a class="fa fa-2x fa-github" href="https://github.com/{{ site.github_username }}"><span class="description">GitHub</span></a></li>
+                    {% endif %}
+                    
+                    {% if site.twitch_channel %}
+                    <li><a class="fa fa-2x fa-twitch" href="https://www.twitch.tv/{{ site.twitch_channel }}"><span class="description">Twitch</span></a></li>
                     {% endif %}
 
                     {% if site.youtube_channel %}
@@ -45,10 +53,6 @@ permalink: /
 
                     {% if site.medium_username %}
                     <li><a class="fa fa-2x fa-medium" href="https://medium.com/@{{ site.medium_username }}"><span class="description">Medium</span></a></li>
-                    {% endif %}
-
-                    {% if site.twitter_username %}
-                    <li><a class="fa fa-2x fa-twitter" href="https://twitter.com/{{ site.twitter_username }}"><span class="description">Twitter</span></a></li>
                     {% endif %}
 
                     {% if site.codepen_username %}
@@ -65,10 +69,6 @@ permalink: /
 
                     {% if site.google_plus_username %}
                     <li><a class="fa fa-2x fa-google-plus" href="https://plus.google.com/+{{ site.google_plus_username }}"><span class="description">Google +</span></a></li>
-                    {% endif %}
-
-                    {% if site.linkedin_username %}
-                    <li><a class="fa fa-2x fa-linkedin" href="https://linkedin.com/in/{{ site.linkedin_username }}"><span class="description">LinkedIn</span></a></li>
                     {% endif %}
 
                     {% if site.vine_username %}
@@ -131,6 +131,11 @@ permalink: /
                     <li><a class="fa fa-2x fa-key" href="{{ site.public_key_url }}"><span class="description">PGP Key</span></a></li>
                     {% endif %}
                 </ul>
+                
+                {% if site.extra_life %}
+                    <a style="border: 0;" href="https://www.extra-life.org/index.cfm?fuseaction=donorDrive.participant&participantID={{ site.extra_life }}"><img src="imgs/raise1k.jpg"/></a>
+                {% endif %}
+                
         </div>
 
     </body>
