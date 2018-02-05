@@ -1,8 +1,7 @@
 # Site settings
-name: Hart Hoover
+title: Hart Hoover
 description: "Tech | Coffee | Tacos"
 url: "http://harthoover.com"
-
 
 # Delete the lines you don't need
 # about 5 elements are recomended
