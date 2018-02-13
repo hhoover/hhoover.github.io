@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Fixing a Broken Kubernetes API server</title>
+  <meta property="og:title" content="Fixing a Broken Kubernetes API server" />
+  <meta name="twitter:title" content="Fixing a Broken Kubernetes API server" />
+  <meta name="description" content="You&rsquo;ve gone and done it: you oopsie-daisy&rsquo;d some flag in your API server&rsquo;s yaml,
+applied it, and now it&rsquo;s in etcd. Your API server pods are crashlooping, and
+very quickly your dashboard and API go down. Nothing is accessible. You are
+screwed.">
+  <meta property="og:description" content="You&rsquo;ve gone and done it: you oopsie-daisy&rsquo;d some flag in your API server&rsquo;s yaml,
+applied it, and now it&rsquo;s in etcd. Your API server pods are crashlooping, and
+very quickly your dashboard and API go down. Nothing is accessible. You are
+screwed.">
+  <meta name="twitter:description" content="You&rsquo;ve gone and done it: you oopsie-daisy&rsquo;d some flag in your API server&rsquo;s yaml,
+applied it, and now it&rsquo;s in etcd. Your API server pods are crashlooping, and
+very quickly your …">
+  <meta name="author" content="Hart Hoover"/>
+  <link href='https://harthoover.com/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta property="og:image" content="https://avatars2.githubusercontent.com/u/579484" />
+  <meta name="twitter:image" content="https://avatars2.githubusercontent.com/u/579484" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@hhoover" />
+  <meta name="twitter:creator" content="@hhoover" />
+  <meta property="og:url" content="https://harthoover.com/fixing-a-broken-kubernetes-api-server/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Hart Hoover" />
+
+  <meta name="generator" content="Hugo 0.35" />
+  <link rel="canonical" href="https://harthoover.com/fixing-a-broken-kubernetes-api-server/" />
+  <link rel="alternate" href="https://harthoover.com/index.xml" type="application/rss+xml" title="Hart Hoover">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://harthoover.com/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  <link rel="stylesheet" href="https://harthoover.com/css/highlight.min.css" /><link rel="stylesheet" href="https://harthoover.com/css/codeblock.css" />
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous">
+
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-77332200-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='//www.google-analytics.com/analytics.js'></script>
+
+</head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://harthoover.com">Hart Hoover</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="Home" href="/">Home</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="About" href="/about/">About</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Tags" href="/tags">Tags</a>
+            </li>
+          
+        
+
+        
+
+        
+      </ul>
+    </div>
+
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        
+          <a title="Hart Hoover" href="https://harthoover.com">
+            <img class="avatar-img" src="https://avatars2.githubusercontent.com/u/579484" alt="Hart Hoover" />
+          </a>
+        
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+
+
+    
+  
+  
+  
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-heading">
+              <h1>Fixing a Broken Kubernetes API server</h1>
+                
+                
+                  <span class="post-meta">
+  
+  
+  <i class="fa fa-calendar-o"></i>&nbsp;Posted on February 13, 2018
+  
+  
+  &nbsp;|&nbsp;
+  <i class="fa fa-clock-o"></i> 2 minutes (380 words)
+  
+  
+</span>
+
+
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        
+        <img src="/assets/img/kubernetes_logo.jpg" class="img-title" />
+        
+      <article role="main" class="blog-post">
+        <p>You&rsquo;ve gone and done it: you oopsie-daisy&rsquo;d some flag in your API server&rsquo;s yaml,
+applied it, and now it&rsquo;s in etcd. Your API server pods are crashlooping, and
+very quickly your dashboard and API go down. Nothing is accessible. You are
+screwed.</p>
+
+<h2 id="or-maybe-not">Or Maybe Not</h2>
+
+<p>You still have a chance! This has been tested on <a href="https://coreos.com/tectonic/">CoreOS&rsquo;s Tectonic</a> 1.8+,
+but might work elsewhere. SSH to any master node (you are running multiple
+masters aren&rsquo;t you?), and sudo to root. The steps: recover the API server
+manifest and secrets from etcd, fix the terrible mistake, start up a
+recovery API pod using bootkube, then fix the real API configuration. Ready?</p>
+
+<h2 id="recovery">Recovery</h2>
+
+<p>A few things are needed for this to work:</p>
+
+<ul>
+<li>etcd client TLS files: CA certificate, certificate, and key</li>
+<li>FQDNs of your etcd nodes</li>
+</ul>
+
+<p>The etcd TLS files can be found in the assests.zip that Tectonic makes at
+install time. They might also be on the master node already, trying to be used
+by the failing API pods. An example:</p>
+
+<p><code>/etc/kubernetes/checkpoint-secrets/kube-system/kube-apiserver-259ll/kube-apiserver/etcd-client-ca.crt</code></p>
+
+<p>Run this docker container, fixing the paths/domains for your setup:</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ docker run -it <span class="se">\
+</span><span class="se"></span>-v /etc:/etc <span class="se">\
+</span><span class="se"></span>-v /root/recovery:/recovery <span class="se">\
+</span><span class="se"></span>quay.io/coreos/bootkube:v0.8.1 <span class="se">\
+</span><span class="se"></span>/bootkube recover <span class="se">\
+</span><span class="se"></span>--etcd-ca-path /path/to/etcd-client-ca.crt <span class="se">\
+</span><span class="se"></span>--etcd-certificate-path /path/to/etcd-client.crt <span class="se">\
+</span><span class="se"></span>--etcd-private-key-path /path/to/etcd-client.key <span class="se">\
+</span><span class="se"></span>--recovery-dir /recovery/now <span class="se">\
+</span><span class="se"></span>--etcd-servers<span class="o">=</span>https://etcd0.com:2379,https://etcd1.com:2379,https://etcd2.com:2379 <span class="se">\
+</span><span class="se"></span>--kubeconfig /etc/kubernetes/kubeconfig</code></pre></div>
+<p>The expected output looks like this:</p>
+<div class="highlight"><pre class="chroma">Writing asset: /recovery/now/bootstrap-manifests/bootstrap-kube-apiserver.yaml
+Writing asset: /recovery/now/tls/secrets/kube-apiserver/apiserver.crt
+Writing asset: /recovery/now/tls/secrets/kube-apiserver/apiserver.key
+Writing asset: /recovery/now/tls/secrets/kube-apiserver/ca.crt
+Writing asset: /recovery/now/tls/secrets/kube-apiserver/etcd-client-ca.crt
+Writing asset: /recovery/now/tls/secrets/kube-apiserver/etcd-client.crt
+Writing asset: /recovery/now/tls/secrets/kube-apiserver/etcd-client.key
+Writing asset: /recovery/now/tls/secrets/kube-apiserver/oidc-ca.crt
+Writing asset: /recovery/now/tls/secrets/kube-apiserver/service-account.pub
+Writing asset: /recovery/now/tls/secrets/kube-cloud-cfg/config
+Writing asset: /recovery/now/tls/secrets/kube-controller-manager/service-account.key
+Writing asset: /recovery/now/tls/secrets/kube-controller-manager/ca.crt
+Writing asset: /recovery/now/auth/kubeconfig</pre></div>
+<h2 id="repair">Repair</h2>
+
+<p>Now to fix everything. Edit <code>/root/recovery/now/bootstrap-manifests/bootstrap-kube-apiserver.yaml</code>
+and back out the change that ruined the day. Save it, and copy files where they
+need to go:</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ cp -r /root/recovery/now/tls /etc/kubernetes/bootstrap-secrets
+$ cp /root/recovery/now/bootstrap-manifests/bootstrap-kube-apiserver.yaml /etc/kubernetes/manifests</code></pre></div>
+<p>Here&rsquo;s what happens. The kubelet sees the pod manifest in
+<code>/etc/kubernetes/manifests</code> and starts it up. There&rsquo;s now a pod running a single,
+standalone API server. Use <code>kubectl</code> or the dashboard to edit the ACTUAL API
+server&rsquo;s configuration and bounce the pods. Did they all come up?
+Hooray!</p>
+
+<h2 id="cleanup">Cleanup</h2>
+
+<p>Last but not least, delete the recovery pod using <code>kubectl</code> or the dashboard,
+and maybe back up the <code>/root/recovery</code> directory in case there are more changes
+to make.</p>
+
+<h4 id="special-thanks">Special Thanks</h4>
+
+<p>Special thanks to <a href="https://twitter.com/mauilion">Duffie Cooley</a>, who might be a Kubernetes wizard.</p>
+      </article>
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="https://harthoover.com/pretty-alertmanager-alerts-in-slack/" data-toggle="tooltip" data-placement="top" title="Pretty AlertManager Alerts in Slack">&larr; Previous Post</a>
+            </li>
+          
+          
+        </ul>
+      
+
+
+      
+
+    </div>
+  </div>
+</div>
+
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+                <a href="mailto:hart.hoover@gmail.com" title="Email me">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/hhoover" title="GitHub">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/hhoover" title="Twitter">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://linkedin.com/in/harthoover" title="LinkedIn">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/harthoover" title="Instagram">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/c/HartHoover" title="Youtube">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.slideshare.net/harthoover" title="Slideshare">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-slideshare fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://speakerdeck.com/hhoover" title="Speaker Deck">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-table fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+          <li>
+            
+            <a href="https://harthoover.com/index.xml" title="RSS">
+            
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+          <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
+          &nbsp;&nbsp;
+          &copy; 2018
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://harthoover.com">Hart Hoover</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="http://gohugo.io">Hugo v0.35</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js" integrity="sha384-/y1Nn9+QQAipbNQWU65krzJralCnuOasHncUFXGkdwntGeSvQicrYkiUBwsgUqc1" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/contrib/auto-render.min.js" integrity="sha384-dq1/gEHSxPZQ7DdrM82ID4YVol9BYyU7GbWlIwnwyPzotpoc57wDw/guX8EaYGPx" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://harthoover.com/js/main.js"></script>
+<script src="https://harthoover.com/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> $(document).ready(function() {$("pre.chroma").css("padding","0");}); </script><script> renderMathInElement(document.body); </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js" integrity="sha384-QELNnmcmU8IR9ZAykt67vGr9/rZJdHbiWi64V88fCPaOohUlHCqUD/unNN0BXSqy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js" integrity="sha384-m67o7SkQ1ALzKZIFh4CiTA8tmadaujiTa9Vu+nqPSwDOqHrDmxLezTdFln8077+q" crossorigin="anonymous"></script>
+<script src="https://harthoover.com/js/load-photoswipe.js"></script>
+
+
+
+
+
+
+  </body>
+</html>
+

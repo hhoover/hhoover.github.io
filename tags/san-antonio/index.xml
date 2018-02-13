@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>San Antonio on Hart Hoover</title>
+    <link>https://harthoover.com/tags/san-antonio/</link>
+    <description>Recent content in San Antonio on Hart Hoover</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>hart.hoover@gmail.com (Hart Hoover)</managingEditor>
+    <webMaster>hart.hoover@gmail.com (Hart Hoover)</webMaster>
+    <lastBuildDate>Tue, 24 Mar 2015 20:19:20 +0000</lastBuildDate>
+    
+	<atom:link href="https://harthoover.com/tags/san-antonio/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Top 15 San Antonio Coffee Shops</title>
+      <link>https://harthoover.com/top-15-san-antonio-coffee-shops/</link>
+      <pubDate>Tue, 24 Mar 2015 20:19:20 +0000</pubDate>
+      <author>hart.hoover@gmail.com (Hart Hoover)</author>
+      <guid>https://harthoover.com/top-15-san-antonio-coffee-shops/</guid>
+      <description>The Alamo City Moms Blog has a great post up on coffee shops in San Antonio. Several posts on ASpoonfulOf.Coffee have been made in these shops. Worth a read!
+http://alamocity.citymomsblog.com/2015/03/24/top-15-san-antonio-coffee-shops/</description>
+    </item>
+    
+  </channel>
+</rss>

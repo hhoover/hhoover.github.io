@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hart Hoover</title>
+    <link>https://harthoover.com/</link>
+    <description>Recent content on Hart Hoover</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>hart.hoover@gmail.com (Hart Hoover)</managingEditor>
+    <webMaster>hart.hoover@gmail.com (Hart Hoover)</webMaster>
+    <lastBuildDate>Tue, 13 Feb 2018 09:27:07 -0600</lastBuildDate>
+    
+	<atom:link href="https://harthoover.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Fixing a Broken Kubernetes API server</title>
+      <link>https://harthoover.com/fixing-a-broken-kubernetes-api-server/</link>
+      <pubDate>Tue, 13 Feb 2018 09:27:07 -0600</pubDate>
+      <author>hart.hoover@gmail.com (Hart Hoover)</author>
+      <guid>https://harthoover.com/fixing-a-broken-kubernetes-api-server/</guid>
+      <description>&lt;p&gt;You&amp;rsquo;ve gone and done it: you oopsie-daisy&amp;rsquo;d some flag in your API server&amp;rsquo;s yaml,
+applied it, and now it&amp;rsquo;s in etcd. Your API server pods are crashlooping, and
+very quickly your dashboard and API go down. Nothing is accessible. You are
+screwed.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>About Hart</title>
+      <link>https://harthoover.com/about/</link>
+      <pubDate>Mon, 12 Feb 2018 14:26:09 -0600</pubDate>
+      <author>hart.hoover@gmail.com (Hart Hoover)</author>
+      <guid>https://harthoover.com/about/</guid>
+      <description>Hart Hoover is an accomplished technical professional specializing in cloud infrastructure deployment and operations on public cloud, private cloud, and using container orchestration environments. His expertise lies in public evangelism and community building, Linux-based operating systems, computing automation, and cloud application architecture. Hart is passionate about making Dev and Ops awesome by teaching others. He founded San Antonio DevOps and helps organize Kubernetes San Antonio.
+Oh, and he drinks a ton of coffee.</description>
+    </item>
+    
+    <item>
+      <title>Pretty AlertManager Alerts in Slack</title>
+      <link>https://harthoover.com/pretty-alertmanager-alerts-in-slack/</link>
+      <pubDate>Thu, 01 Feb 2018 10:43:53 -0600</pubDate>
+      <author>hart.hoover@gmail.com (Hart Hoover)</author>
+      <guid>https://harthoover.com/pretty-alertmanager-alerts-in-slack/</guid>
+      <description>&lt;p&gt;Prometheus alerting through AlertManager can be configured to send messages to
+Slack. Alerts sent to Slack, by default, are not very rich in detail:&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CI/CD with Kubernetes</title>
+      <link>https://harthoover.com/ci/cd-with-kubernetes/</link>
+      <pubDate>Tue, 24 Oct 2017 11:10:46 -0600</pubDate>
+      <author>hart.hoover@gmail.com (Hart Hoover)</author>
+      <guid>https://harthoover.com/ci/cd-with-kubernetes/</guid>
+      <description>&lt;p&gt;I gave this talk at &lt;a href=&#34;https://www.meetup.com/Kubernetes-San-Antonio/events/243923168/&#34;&gt;Kubernetes San Antonio&lt;/a&gt; on CI/CD options with
+Kubernetes. Check out &lt;a href=&#34;https://github.com/hhoover/jenkinetes&#34;&gt;manifests I used&lt;/a&gt; for Jenkins as a demo.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Dinner and Code Meetup: Understanding DevOps</title>
+      <link>https://harthoover.com/dinner-and-code-meetup-understanding-devops/</link>
+      <pubDate>Sun, 18 Dec 2016 11:48:04 -0600</pubDate>
+      <author>hart.hoover@gmail.com (Hart Hoover)</author>
+      <guid>https://harthoover.com/dinner-and-code-meetup-understanding-devops/</guid>
+      <description>&lt;p&gt;I gave this talk at the &lt;a href=&#34;https://www.meetup.com/Dinner-and-Code-San-Antonio/events/235718681/&#34;&gt;Dinner and Code San Antonio Meetup&lt;/a&gt; as an introduction to
+DevOps practices for those new to software development.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>The Big D and I Don&#39;t Mean Decaf</title>
+      <link>https://harthoover.com/the-big-d-and-i-dont-mean-decaf/</link>
+      <pubDate>Sun, 20 Sep 2015 21:13:12 +0000</pubDate>
+      <author>hart.hoover@gmail.com (Hart Hoover)</author>
+      <guid>https://harthoover.com/the-big-d-and-i-dont-mean-decaf/</guid>
+      <description>I spent the week in North Texas, traveling to Dallas and beyond to Texarkana to visit family. While in Dallas, I visited a few coffee shops on my list:
+ Ascension Cultivar Coffee Oak Lawn  I also attempted to visit Tweed Coffee&amp;rsquo;s &amp;ldquo;roasting den&amp;rdquo;, but was unfortunately turned away. They don&amp;rsquo;t serve coffee there (or give tours, apparently). It&amp;rsquo;s ok though, it was mostly a gamble anyway.
+I had great coffee in Dallas, but I had to settle for Starbucks in Texarkana.</description>
+    </item>
+    
+    <item>
+      <title>A Quick Tasting Tour of Houston</title>
+      <link>https://harthoover.com/a-quick-tasting-tour-of-houston/</link>
+      <pubDate>Tue, 08 Sep 2015 21:53:23 +0000</pubDate>
+      <author>hart.hoover@gmail.com (Hart Hoover)</author>
+      <guid>https://harthoover.com/a-quick-tasting-tour-of-houston/</guid>
+      <description>As I said in my previous post, I spent the Labor Day weekend in Houston. I toured the Katz Coffee Roasting facility, and went to three coffee shops that were highly rated in the city:
+ Boomtown Coffee Antidote Catalina Coffee  I didn&amp;rsquo;t make it over to Blacksmith, but when traveling not everything goes perfectly according to plan. By the time I got over there parking was a bit difficult to come by so I passed it up.</description>
+    </item>
+    
+    <item>
+      <title>Touring Katz Coffee</title>
+      <link>https://harthoover.com/touring-katz-coffee/</link>
+      <pubDate>Mon, 07 Sep 2015 02:31:45 +0000</pubDate>
+      <author>hart.hoover@gmail.com (Hart Hoover)</author>
+      <guid>https://harthoover.com/touring-katz-coffee/</guid>
+      <description>My Labor Day weekend was spent in Houston taking in a baseball game and drinking some great coffee. As laid out in my plan for my sabbatical, I toured the Katz Coffee Roasting Facility on the North Side of town. It appears Katz started in one warehouse and grew along their center room by room as their business took off. Our tour guide told us they would be moving to a new facility soon.</description>
+    </item>
+    
+    <item>
+      <title>The Sorcerer&#39;s Apprentice</title>
+      <link>https://harthoover.com/the-sorcerers-apprentice/</link>
+      <pubDate>Thu, 03 Sep 2015 03:04:32 +0000</pubDate>
+      <author>hart.hoover@gmail.com (Hart Hoover)</author>
+      <guid>https://harthoover.com/the-sorcerers-apprentice/</guid>
+      <description>Today I began my roasting internship at Brown Coffee! I had a great time working at &amp;ldquo;Roasting Fantasy Camp&amp;rdquo; as Aaron called it, which is probably the perfect name for what I&amp;rsquo;ve been up to. Roasting was already in progress when I got there, so I was able to jump right in and NOT DO ANYTHING. I was there to learn, so I was very happy to watch a bit while the experts transformed green coffee:</description>
+    </item>
+    
+    <item>
+      <title>Brew Method Tasting</title>
+      <link>https://harthoover.com/brew-method-tasting/</link>
+      <pubDate>Sun, 30 Aug 2015 17:01:49 +0000</pubDate>
+      <author>hart.hoover@gmail.com (Hart Hoover)</author>
+      <guid>https://harthoover.com/brew-method-tasting/</guid>
+      <description>My sister-in-law (and San Antonio&amp;rsquo;s &amp;ldquo;Social Llama&amp;rdquo;) Kelly came over today with a bag of coffee from Mildfire Coffee Roasters here in San Antonio. This is an Indian coffee, sun-dried then exposed to Monsoon moisture.
+There&amp;rsquo;s something magical about opening a fresh bag of coffee:
+She had offered to bring some to me in exchange for a brew method tasting, using three different brew methods:
+ Chemex French Press Keurig (custom refillable pod)  I was happy to oblige!</description>
+    </item>
+    
+    <item>
+      <title>Sabbatical Plans</title>
+      <link>https://harthoover.com/sabbatical-plans/</link>
+      <pubDate>Wed, 26 Aug 2015 18:49:02 +0000</pubDate>
+      <author>hart.hoover@gmail.com (Hart Hoover)</author>
+      <guid>https://harthoover.com/sabbatical-plans/</guid>
+      <description>After 7 years of service, my employer grants me a one month paid sabbatical that I can back with a month of vacation time. That&amp;rsquo;s two months paid time off! I&amp;rsquo;m taking my sabbatical time in September and October. I keep getting asked, &amp;ldquo;What are you planning to do?&amp;rdquo;
+The answer, of course, is coffee-related.
+Two months is a long time, but also a short time. I plan to learn as much about the coffee industry as possible, tracing backwards from cup to farm.</description>
+    </item>
+    
+    <item>
+      <title>The Bean and Biscuit: Blanco, TX</title>
+      <link>https://harthoover.com/the-bean-and-biscuit-blanco-tx/</link>
+      <pubDate>Sat, 08 Aug 2015 17:49:54 +0000</pubDate>
+      <author>hart.hoover@gmail.com (Hart Hoover)</author>
+      <guid>https://harthoover.com/the-bean-and-biscuit-blanco-tx/</guid>
+      <description>The family and I decided on a short weekend road trip to Blanco, which is about 40 miles north of San Antonio. The town has an awesome town square around an old courthouse.
+In the square, The Bean and Biscuit is next to the Blanco Tourism Center, which is surprisingly closed on Saturday. Oh well, I&amp;rsquo;m here for the coffee anyway. Who am I kidding: add a slice of pie too.</description>
+    </item>
+    
+    <item>
+      <title>Puro Cafe: White Elephant</title>
+      <link>https://harthoover.com/puro-cafe-white-elephant/</link>
+      <pubDate>Fri, 17 Jul 2015 13:17:24 +0000</pubDate>
+      <author>hart.hoover@gmail.com (Hart Hoover)</author>
+      <guid>https://harthoover.com/puro-cafe-white-elephant/</guid>
+      <description>This new place on South Presa has excellent coffee. Dorian, the barista behind the bar, really knows his stuff. What more needs to be said? Get down here.</description>
+    </item>
+    
+    <item>
+      <title>Best San Antonio Coffee Shops</title>
+      <link>https://harthoover.com/best-san-antonio-coffee-shops/</link>
+      <pubDate>Tue, 23 Jun 2015 15:16:23 +0000</pubDate>
+      <author>hart.hoover@gmail.com (Hart Hoover)</author>
+      <guid>https://harthoover.com/best-san-antonio-coffee-shops/</guid>
+      <description>I woke up this morning to find this list of San Antonio&amp;rsquo;s best coffee shops on MySA by Chris Eudaily. I&amp;rsquo;ll save you a click. Here&amp;rsquo;s his list, in what I assume is no particular order:
+ Brown Coffee Co. Rosella Coffee Aspen&amp;rsquo;s Brew Café Aroma Candlelight Coffeehouse Halcyon Southtown La Taza Coffee House Local Coffee Mildfire Coffee Roasters Olmos Perk Coffee Perk&amp;rsquo;s Coffee Café Revolucion Coffee + Juice Tazas Coffee  I&amp;rsquo;m not sure what criteria was used to determine &amp;ldquo;best&amp;rdquo; here, but some of these places are amazing and worthy of high praise while others leave a lot to be desired.</description>
+    </item>
+    
+    <item>
+      <title>PuroCafe: Halcyon Southtown</title>
+      <link>https://harthoover.com/purocafe-halcyon-southtown/</link>
+      <pubDate>Fri, 12 Jun 2015 14:41:15 +0000</pubDate>
+      <author>hart.hoover@gmail.com (Hart Hoover)</author>
+      <guid>https://harthoover.com/purocafe-halcyon-southtown/</guid>
+      <description>The #PuroCafe meetup continues! This week we met at Halcyon in the lovely Blue Star Arts Complex. The coffee was delicious and they had multiple espresso choices:
+ Heart Roasters Buddy Brew Roasters  I couldn&amp;rsquo;t even wait to start drinking my cappuccino before taking a picture:
+I also had a slow-pour (Chemex) from Kenya that is highly recommended, although the brand was not marked. I&amp;rsquo;m still drinking it and getting more depressed as the cup gets lighter in my hand.</description>
+    </item>
+    
+    <item>
+      <title>Chemex Recipe</title>
+      <link>https://harthoover.com/chemex-recipe/</link>
+      <pubDate>Mon, 01 Jun 2015 12:40:48 +0000</pubDate>
+      <author>hart.hoover@gmail.com (Hart Hoover)</author>
+      <guid>https://harthoover.com/chemex-recipe/</guid>
+      <description>On a bag of delicious Merit coffee from Local&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Puro Cafe: Rosella Coffee</title>
+      <link>https://harthoover.com/puro-cafe-rosella-coffee/</link>
+      <pubDate>Fri, 29 May 2015 19:31:49 +0000</pubDate>
+      <author>hart.hoover@gmail.com (Hart Hoover)</author>
+      <guid>https://harthoover.com/puro-cafe-rosella-coffee/</guid>
+      <description>I&amp;rsquo;m doing a meetup! Puro Cafe started as a 6-week long explore of San Antonio&amp;rsquo;s coffee industry with some friends. At our last meeting&amp;hellip; when it was over, no one wanted it to end. So, the Puro Cafe meetup formally exists and we had our &amp;ldquo;first&amp;rdquo; meeting at Rosella Coffee this morning.
+Being the Friday after an overnight rain, I needed to get a bit more wired up than normal. I had a very tasty cappuccino with Rosella&amp;rsquo;s Egg Cloud sandwich for breakast.</description>
+    </item>
+    
+    <item>
+      <title>SHB Las Palomas - Blue State Coffee</title>
+      <link>https://harthoover.com/shb-las-palomas---blue-state-coffee/</link>
+      <pubDate>Mon, 06 Apr 2015 20:51:38 +0000</pubDate>
+      <author>hart.hoover@gmail.com (Hart Hoover)</author>
+      <guid>https://harthoover.com/shb-las-palomas---blue-state-coffee/</guid>
+      <description>A friend just returned from a Boston trip with some Costa Rican goodness courtesy of Blue State Coffee.
+Blue State is a coffee roastery &amp;amp; shop with several locations in New England, with a heavy focus on philanthropy:
+Blue State Coffee donates 2% of sales to local non-profit organizations suggested by our customers. We choose 4 local non-profit organizations at each of our stores twice a year for a 6 month period.</description>
+    </item>
+    
+    <item>
+      <title>Brew Methods</title>
+      <link>https://harthoover.com/brew-methods/</link>
+      <pubDate>Sat, 04 Apr 2015 20:37:13 +0000</pubDate>
+      <author>hart.hoover@gmail.com (Hart Hoover)</author>
+      <guid>https://harthoover.com/brew-methods/</guid>
+      <description>You brew your coffee using some sort of device that moves clean water through ground up beans and consuming the liquid that is created. Methods of doing this vary wildly, from K-CUP coffee pods to Espresso to French Press to Siphon, and on and on. Like many things, there are trade-offs for the method you choose. Pop Chart Labs has an excellent break down for brew methods that you can purchase:</description>
+    </item>
+    
+    <item>
+      <title>Top 15 San Antonio Coffee Shops</title>
+      <link>https://harthoover.com/top-15-san-antonio-coffee-shops/</link>
+      <pubDate>Tue, 24 Mar 2015 20:19:20 +0000</pubDate>
+      <author>hart.hoover@gmail.com (Hart Hoover)</author>
+      <guid>https://harthoover.com/top-15-san-antonio-coffee-shops/</guid>
+      <description>The Alamo City Moms Blog has a great post up on coffee shops in San Antonio. Several posts on ASpoonfulOf.Coffee have been made in these shops. Worth a read!
+http://alamocity.citymomsblog.com/2015/03/24/top-15-san-antonio-coffee-shops/</description>
+    </item>
+    
+    <item>
+      <title>Giant Steps - Blue Bottle</title>
+      <link>https://harthoover.com/giant-steps---blue-bottle/</link>
+      <pubDate>Tue, 24 Mar 2015 20:06:18 +0000</pubDate>
+      <author>hart.hoover@gmail.com (Hart Hoover)</author>
+      <guid>https://harthoover.com/giant-steps---blue-bottle/</guid>
+      <description>Yet another Blue Bottle coffee, I know. It&amp;rsquo;s just so darned tasty. This coffee is extremely viscous and chocolatey. I feel like I&amp;rsquo;m drinking Hershey Syrup. The notes from Blue Bottle (see below) actually recommend cream.
+I&amp;rsquo;m usually against cream in coffee because I feel like it kills flavor. If I wanted cream I could drink a Keurig K-Cup and be good to go. But&amp;hellip; this time I relented only because we have some crazy good cream on hand from Promised Land Dairy.</description>
+    </item>
+    
+    <item>
+      <title>Three Africans - Blue Bottle</title>
+      <link>https://harthoover.com/three-africans---blue-bottle/</link>
+      <pubDate>Wed, 18 Mar 2015 14:49:07 +0000</pubDate>
+      <author>hart.hoover@gmail.com (Hart Hoover)</author>
+      <guid>https://harthoover.com/three-africans---blue-bottle/</guid>
+      <description>Stop the presses. I may have just had some of the best coffee I&amp;rsquo;ve ever tasted. As you can probably tell based on reading posts on this blog, I&amp;rsquo;m a huge promoter of Blue Bottle Coffee. For Texans who may be reading this, it&amp;rsquo;s like the Franklin BBQ of coffee, which is no small statement. It&amp;rsquo;s amazing, and today&amp;rsquo;s coffee is no exception. I&amp;rsquo;m drinking the Three Africans blend.
+Notes from Blue Bottle:</description>
+    </item>
+    
+    <item>
+      <title>West Texas Wildfire - Big Bend Coffee</title>
+      <link>https://harthoover.com/west-texas-wildfire---big-bend-coffee/</link>
+      <pubDate>Thu, 12 Mar 2015 16:56:15 +0000</pubDate>
+      <author>hart.hoover@gmail.com (Hart Hoover)</author>
+      <guid>https://harthoover.com/west-texas-wildfire---big-bend-coffee/</guid>
+      <description>Good morning! Today I&amp;rsquo;m drinking coffee from Big Bend Coffee Roasters from the bustling metropolis of Marfa, Texas. On the inside, the roastery looks like it&amp;rsquo;s in a temporary building used by overcrowded Texas schools or oil field offices, but I was assured it was an actual freestanding building. The people are friendly and hey, you&amp;rsquo;re in Marfa. This isn&amp;rsquo;t exactly Stumptown country.
+This coffee&amp;rsquo;s label is less about the coffee and more about the name of the coffee, but a few things stand out:</description>
+    </item>
+    
+    <item>
+      <title>Polyamory</title>
+      <link>https://harthoover.com/polyamory/</link>
+      <pubDate>Sun, 15 Feb 2015 19:56:18 +0000</pubDate>
+      <author>hart.hoover@gmail.com (Hart Hoover)</author>
+      <guid>https://harthoover.com/polyamory/</guid>
+      <description>I enjoy experiencing a healthy variety of excellent coffee. Typically, to get a good variety of coffee you are looking to satisfy both of these criteria:
+ Variety of region. Variety of roaster.  Preferably, I try to get my coffee from a local shop that has this variety. When a coffee roaster opens a coffee shop, you can expect the coffee served will be from that roaster alone. The roaster will provide coffee from a variety of regions, however.</description>
+    </item>
+    
+    <item>
+      <title>Colombia - First Ascent</title>
+      <link>https://harthoover.com/colombia---first-ascent/</link>
+      <pubDate>Thu, 12 Feb 2015 22:15:06 +0000</pubDate>
+      <author>hart.hoover@gmail.com (Hart Hoover)</author>
+      <guid>https://harthoover.com/colombia---first-ascent/</guid>
+      <description>In my last post (earlier today) I was drinking Ethopian coffee from First Ascent Coffee Roasters. in Crested Butte, CO. This time I&amp;rsquo;m drinking the Colombian coffee.
+While the Ethiopian coffee had a very lemon-y taste (which was great!) this coffee has strong chocolate flavors. While the Ethipoian would be a great way to start the day, this is a great coffee to end it.
+Some background on the Timana region: The name Timana originates from the tribe that originally inhabited this region, the Timanaes, who prided themselves in being the fiercest and most dominant group if the south of Colombia.</description>
+    </item>
+    
+    <item>
+      <title>Ethiopia Natural - First Ascent</title>
+      <link>https://harthoover.com/ethiopia-natural---first-ascent/</link>
+      <pubDate>Thu, 12 Feb 2015 15:43:54 +0000</pubDate>
+      <author>hart.hoover@gmail.com (Hart Hoover)</author>
+      <guid>https://harthoover.com/ethiopia-natural---first-ascent/</guid>
+      <description>My sister-in-law went skiing recently in the small mountain town of Crested Butte, CO. I&amp;rsquo;m always on the hunt for coffee I can&amp;rsquo;t normally get, so I did a little research (read: I googled it) and found First Ascent Coffee Roasters. First Ascent only roasts in small batches, claiming a laser-focus on high quality. My sister-in-law brought back two of their coffees: the Ethiopian coffee I&amp;rsquo;m drinking now and one from Columbia.</description>
+    </item>
+    
+    <item>
+      <title>Burundi Kalico - Merit</title>
+      <link>https://harthoover.com/burundi-kalico---merit/</link>
+      <pubDate>Wed, 11 Feb 2015 14:03:45 +0000</pubDate>
+      <author>hart.hoover@gmail.com (Hart Hoover)</author>
+      <guid>https://harthoover.com/burundi-kalico---merit/</guid>
+      <description>I was waiting for the Chef meetup to start at Local and decided to try the new Burundi Kalico coffee from Merit Roasting.
+It&amp;rsquo;s very light, bright, and delicious. As you can see from the photo, it claims flavors of peach and brown sugar. Maybe I&amp;rsquo;ve been drinking heavier coffees too much recently but the lightness here is most refreshing. I&amp;rsquo;m almost too impatient for coffee - I want to drink it immediately but coffee always gets better if you JUST WAIT for a minute.</description>
+    </item>
+    
+    <item>
+      <title>Rwanda Abakundakawa - Merit</title>
+      <link>https://harthoover.com/rwanda-abakundakawa---merit/</link>
+      <pubDate>Mon, 02 Feb 2015 15:43:48 +0000</pubDate>
+      <author>hart.hoover@gmail.com (Hart Hoover)</author>
+      <guid>https://harthoover.com/rwanda-abakundakawa---merit/</guid>
+      <description>Today&amp;rsquo;s delicious coffee comes from Rwanda by way of San Antonio&amp;rsquo;s own Merit Roasting.
+Some background on the region: Abakundakawa is a 1,700 member cooperative that mills coffee at the Rushashi washing station in Rwanada. The average altitude there is 1,600 to 1,800 meters for coffee production.
+This coffee is definitely tart, with the red currant flavor shining through. Being a Monday morning, I made the mistake of starting to drink this coffee immediately after brewing it.</description>
+    </item>
+    
+    <item>
+      <title>Colombia Cauca Caloto - Blue Bottle</title>
+      <link>https://harthoover.com/colombia-cauca-caloto---blue-bottle/</link>
+      <pubDate>Thu, 29 Jan 2015 16:13:08 +0000</pubDate>
+      <author>hart.hoover@gmail.com (Hart Hoover)</author>
+      <guid>https://harthoover.com/colombia-cauca-caloto---blue-bottle/</guid>
+      <description>It&amp;rsquo;s been a while since I&amp;rsquo;ve posted here, but I haven&amp;rsquo;t had any new coffee lately to post about! So here we are, a new Blue Bottle shipment and a new coffee - this time from Colombia.
+The tasting notes from Blue Bottle claim flavors of tropical fruit, tangerine, dates and toffee. I can taste the toffee and a touch of fruit. It is, as usual, really good coffee from Blue Bottle.</description>
+    </item>
+    
+    <item>
+      <title>Flat White - Starbucks</title>
+      <link>https://harthoover.com/flat-white---starbucks/</link>
+      <pubDate>Sun, 11 Jan 2015 23:48:40 +0000</pubDate>
+      <author>hart.hoover@gmail.com (Hart Hoover)</author>
+      <guid>https://harthoover.com/flat-white---starbucks/</guid>
+      <description>If you&amp;rsquo;ve read anything else on here, the reaction to this post is probably along these lines:
+*&amp;ldquo;What? Starbucks? I thought I knew you.&amp;rdquo;*
+You&amp;rsquo;re right, but sometimes you grab what&amp;rsquo;s convienent. Plus, Starbucks has had a significant (arguably positive) impact on the world of coffee. Without the Second Wave, we would all still be drinking Folgers. Remember your history.
+It&amp;rsquo;s also been all over the news that Starbucks has announced the new addition to the menu: the Flat White.</description>
+    </item>
+    
+    <item>
+      <title>Making Iced Coffee</title>
+      <link>https://harthoover.com/making-iced-coffee/</link>
+      <pubDate>Thu, 08 Jan 2015 01:04:00 +0000</pubDate>
+      <author>hart.hoover@gmail.com (Hart Hoover)</author>
+      <guid>https://harthoover.com/making-iced-coffee/</guid>
+      <description>As the wind picks up and the evening gets colder, I decided to go against the grain and make some cold brew. Some have the patience to put water in grounds and let that mess soak for a few hours (or longer). I have no such patience. I pulled out my trusty Chemex, added ice, and got to work.
+The purist would say &amp;ldquo;You are NOT cold brewing.&amp;rdquo; They would be right.</description>
+    </item>
+    
+    <item>
+      <title>Colombia La Virgen AA - Merit</title>
+      <link>https://harthoover.com/colombia-la-virgen-aa---merit/</link>
+      <pubDate>Mon, 05 Jan 2015 16:00:30 +0000</pubDate>
+      <author>hart.hoover@gmail.com (Hart Hoover)</author>
+      <guid>https://harthoover.com/colombia-la-virgen-aa---merit/</guid>
+      <description>Merit Roasting is the brand new roasting arm of San Antonio&amp;rsquo;s Local Coffee. Local is a fantastic coffee shop with three locations, but I mostly hang out at the Sonterra location as it&amp;rsquo;s the best coffee available in any direction for several miles. If you are going to visit Local Sonterra, I recommend against going on a Sunday - It seems to be their busiest day of the week.
+This Colombian roast claims to have some light citrus, but it seems more like &amp;ldquo;Silky&amp;rdquo; and &amp;ldquo;Caramel&amp;rdquo; shine through more here.</description>
+    </item>
+    
+    <item>
+      <title>Reserva: Cuvee</title>
+      <link>https://harthoover.com/reserva-cuvee/</link>
+      <pubDate>Sat, 03 Jan 2015 17:23:18 +0000</pubDate>
+      <author>hart.hoover@gmail.com (Hart Hoover)</author>
+      <guid>https://harthoover.com/reserva-cuvee/</guid>
+      <description>In a previous post, I wrote some notes up on Cuvée Coffee&amp;rsquo;s cold brew (Black &amp;amp; Blue). This morning I decided to grind up some Reserva from Cuvée, a blend from El Salvador.
+This particular coffee is meant to be served as an espresso, however, I decided to brew it in my French Press today. When I say espresso, the Starbucks faithful among you will probably assume a darker roast. On the contrary, Reserva is a bit on the light side.</description>
+    </item>
+    
+    <item>
+      <title>Costa Rica Chispita - Nozy Coffee</title>
+      <link>https://harthoover.com/costa-rica-chispita---nozy-coffee/</link>
+      <pubDate>Fri, 02 Jan 2015 21:07:12 +0000</pubDate>
+      <author>hart.hoover@gmail.com (Hart Hoover)</author>
+      <guid>https://harthoover.com/costa-rica-chispita---nozy-coffee/</guid>
+      <description>Today I&amp;rsquo;m drinking some Costa Rican coffee by way of Japan. A coworker brought back some coffee from a recent trip to Asia, this coffee among them. Nozy Coffee&amp;rsquo;s &amp;ldquo;The Roastery&amp;rdquo; is apparently supplying beans to several highly regarded Tokyo coffee shops. If you find yourself going to Tokyo, there&amp;rsquo;s a decent review of Nozy Coffee on Timeout.jp.
+This particular coffee, the Costa Rica Chispita, was roasted on November 28th so it&amp;rsquo;s possible the flavor has diminished, but I don&amp;rsquo;t really taste all the things claimed on the label.</description>
+    </item>
+    
+    <item>
+      <title>Black &amp; Blue - Cuvée</title>
+      <link>https://harthoover.com/black--blue---cuv%C3%A9e/</link>
+      <pubDate>Thu, 01 Jan 2015 18:40:14 +0000</pubDate>
+      <author>hart.hoover@gmail.com (Hart Hoover)</author>
+      <guid>https://harthoover.com/black--blue---cuv%C3%A9e/</guid>
+      <description>Happy New Year! Even though it&amp;rsquo;s cold outside it is hard to resist the temptation of Cuvée&amp;rsquo;s cold brew coffee. It comes in a nitrogen-carbonated can that really packs a nice caffeine punch. My theory is the nitrogen bubbles accelrate the absorption of caffeine in the blood, because once I drink one of these things I feel pretty much invincible.
+  You can purchase these cans at the Cuvée Coffee Bar in East Austin, and various grocery stores in the Austin area.</description>
+    </item>
+    
+    <item>
+      <title>Ethiopia Guji Suke Quto - Blue Bottle</title>
+      <link>https://harthoover.com/ethiopia-guji-suke-quto---blue-bottle/</link>
+      <pubDate>Wed, 31 Dec 2014 16:24:54 +0000</pubDate>
+      <author>hart.hoover@gmail.com (Hart Hoover)</author>
+      <guid>https://harthoover.com/ethiopia-guji-suke-quto---blue-bottle/</guid>
+      <description>This month&amp;rsquo;s Blue Bottle shipment features &amp;ldquo;Ethiopia Guji Suke Quto&amp;rdquo;, described by Blue Bottle here:
+The 68-member Suke Quto producer’s association is located in the Odo Shakiso district, in Ethiopia’s Guji zone. Founded in 2004, Suke Quto stretches across a verdant 291 hectares and includes a diverse array of indigenous plant and animal species. After being hand-picked at its apex of ripeness, this coffee is fermented in concrete tanks, washed, and sun-dried on raised beds.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://harthoover.com/assets/img/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>hart.hoover@gmail.com (Hart Hoover)</author>
+      <guid>https://harthoover.com/assets/img/readme/</guid>
+      <description>Content / Images If using the standard file storage, Ghost will upload images to this directory.</description>
+    </item>
+    
+  </channel>
+</rss>

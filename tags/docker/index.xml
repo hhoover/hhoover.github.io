@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docker on Hart Hoover</title>
+    <link>https://harthoover.com/tags/docker/</link>
+    <description>Recent content in Docker on Hart Hoover</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>hart.hoover@gmail.com (Hart Hoover)</managingEditor>
+    <webMaster>hart.hoover@gmail.com (Hart Hoover)</webMaster>
+    <lastBuildDate>Tue, 13 Feb 2018 09:27:07 -0600</lastBuildDate>
+    
+	<atom:link href="https://harthoover.com/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Fixing a Broken Kubernetes API server</title>
+      <link>https://harthoover.com/fixing-a-broken-kubernetes-api-server/</link>
+      <pubDate>Tue, 13 Feb 2018 09:27:07 -0600</pubDate>
+      <author>hart.hoover@gmail.com (Hart Hoover)</author>
+      <guid>https://harthoover.com/fixing-a-broken-kubernetes-api-server/</guid>
+      <description>&lt;p&gt;You&amp;rsquo;ve gone and done it: you oopsie-daisy&amp;rsquo;d some flag in your API server&amp;rsquo;s yaml,
+applied it, and now it&amp;rsquo;s in etcd. Your API server pods are crashlooping, and
+very quickly your dashboard and API go down. Nothing is accessible. You are
+screwed.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CI/CD with Kubernetes</title>
+      <link>https://harthoover.com/ci/cd-with-kubernetes/</link>
+      <pubDate>Tue, 24 Oct 2017 11:10:46 -0600</pubDate>
+      <author>hart.hoover@gmail.com (Hart Hoover)</author>
+      <guid>https://harthoover.com/ci/cd-with-kubernetes/</guid>
+      <description>&lt;p&gt;I gave this talk at &lt;a href=&#34;https://www.meetup.com/Kubernetes-San-Antonio/events/243923168/&#34;&gt;Kubernetes San Antonio&lt;/a&gt; on CI/CD options with
+Kubernetes. Check out &lt;a href=&#34;https://github.com/hhoover/jenkinetes&#34;&gt;manifests I used&lt;/a&gt; for Jenkins as a demo.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

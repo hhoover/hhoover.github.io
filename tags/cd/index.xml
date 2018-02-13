@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cd on Hart Hoover</title>
+    <link>https://harthoover.com/tags/cd/</link>
+    <description>Recent content in Cd on Hart Hoover</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>hart.hoover@gmail.com (Hart Hoover)</managingEditor>
+    <webMaster>hart.hoover@gmail.com (Hart Hoover)</webMaster>
+    <lastBuildDate>Tue, 24 Oct 2017 11:10:46 -0600</lastBuildDate>
+    
+	<atom:link href="https://harthoover.com/tags/cd/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CI/CD with Kubernetes</title>
+      <link>https://harthoover.com/ci/cd-with-kubernetes/</link>
+      <pubDate>Tue, 24 Oct 2017 11:10:46 -0600</pubDate>
+      <author>hart.hoover@gmail.com (Hart Hoover)</author>
+      <guid>https://harthoover.com/ci/cd-with-kubernetes/</guid>
+      <description>&lt;p&gt;I gave this talk at &lt;a href=&#34;https://www.meetup.com/Kubernetes-San-Antonio/events/243923168/&#34;&gt;Kubernetes San Antonio&lt;/a&gt; on CI/CD options with
+Kubernetes. Check out &lt;a href=&#34;https://github.com/hhoover/jenkinetes&#34;&gt;manifests I used&lt;/a&gt; for Jenkins as a demo.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Dinner and Code Meetup: Understanding DevOps</title>
+      <link>https://harthoover.com/dinner-and-code-meetup-understanding-devops/</link>
+      <pubDate>Sun, 18 Dec 2016 11:48:04 -0600</pubDate>
+      <author>hart.hoover@gmail.com (Hart Hoover)</author>
+      <guid>https://harthoover.com/dinner-and-code-meetup-understanding-devops/</guid>
+      <description>&lt;p&gt;I gave this talk at the &lt;a href=&#34;https://www.meetup.com/Dinner-and-Code-San-Antonio/events/235718681/&#34;&gt;Dinner and Code San Antonio Meetup&lt;/a&gt; as an introduction to
+DevOps practices for those new to software development.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
