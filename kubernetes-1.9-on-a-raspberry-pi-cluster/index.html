@@ -5,20 +5,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>Fixing a Broken Kubernetes API server</title>
-  <meta property="og:title" content="Fixing a Broken Kubernetes API server" />
-  <meta name="twitter:title" content="Fixing a Broken Kubernetes API server" />
-  <meta name="description" content="You&rsquo;ve gone and done it: you oopsie-daisy&rsquo;d some flag in your API server&rsquo;s yaml,
-applied it, and now it&rsquo;s in etcd. Your API server pods are crashlooping, and
-very quickly your dashboard and API go down. Nothing is accessible. You are
-screwed.">
-  <meta property="og:description" content="You&rsquo;ve gone and done it: you oopsie-daisy&rsquo;d some flag in your API server&rsquo;s yaml,
-applied it, and now it&rsquo;s in etcd. Your API server pods are crashlooping, and
-very quickly your dashboard and API go down. Nothing is accessible. You are
-screwed.">
-  <meta name="twitter:description" content="You&rsquo;ve gone and done it: you oopsie-daisy&rsquo;d some flag in your API server&rsquo;s yaml,
-applied it, and now it&rsquo;s in etcd. Your API server pods are crashlooping, and
-very quickly your …">
+  <title>Kubernetes 1.9 on a Raspberry Pi Cluster</title>
+  <meta property="og:title" content="Kubernetes 1.9 on a Raspberry Pi Cluster" />
+  <meta name="twitter:title" content="Kubernetes 1.9 on a Raspberry Pi Cluster" />
+  <meta name="description" content="First, this post (and my Raspberry Pi Kubernetes Cluster) stands on the
+shoulders of giants: work that&rsquo;s already been done and explored by others. This
+post serves pretty much as a &ldquo;here&rsquo;s what I did so it worked for me&rdquo; post
+based on their work.">
+  <meta property="og:description" content="First, this post (and my Raspberry Pi Kubernetes Cluster) stands on the
+shoulders of giants: work that&rsquo;s already been done and explored by others. This
+post serves pretty much as a &ldquo;here&rsquo;s what I did so it worked for me&rdquo; post
+based on their work.">
+  <meta name="twitter:description" content="First, this post (and my Raspberry Pi Kubernetes Cluster) stands on the
+shoulders of giants: work that&rsquo;s already been done and explored by others. This
+post serves pretty much as a …">
   <meta name="author" content="Hart Hoover"/>
   <link href='https://harthoover.com/favicon.ico' rel='icon' type='image/x-icon'/>
   <meta property="og:image" content="https://avatars2.githubusercontent.com/u/579484" />
@@ -26,12 +26,12 @@ very quickly your …">
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@hhoover" />
   <meta name="twitter:creator" content="@hhoover" />
-  <meta property="og:url" content="https://harthoover.com/fixing-a-broken-kubernetes-api-server/" />
+  <meta property="og:url" content="https://harthoover.com/kubernetes-1.9-on-a-raspberry-pi-cluster/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Hart Hoover" />
 
   <meta name="generator" content="Hugo 0.35" />
-  <link rel="canonical" href="https://harthoover.com/fixing-a-broken-kubernetes-api-server/" />
+  <link rel="canonical" href="https://harthoover.com/kubernetes-1.9-on-a-raspberry-pi-cluster/" />
   <link rel="alternate" href="https://harthoover.com/index.xml" type="application/rss+xml" title="Hart Hoover">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -175,17 +175,17 @@ ga('send', 'pageview');
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <div class="post-heading">
-              <h1>Fixing a Broken Kubernetes API server</h1>
+              <h1>Kubernetes 1.9 on a Raspberry Pi Cluster</h1>
                 
                 
                   <span class="post-meta">
   
   
-  <i class="fa fa-calendar-o"></i>&nbsp;Posted on February 13, 2018
+  <i class="fa fa-calendar-o"></i>&nbsp;Posted on February 22, 2018
   
   
   &nbsp;|&nbsp;
-  <i class="fa fa-clock-o"></i> 2 minutes (380 words)
+  <i class="fa fa-clock-o"></i> 5 minutes (1021 words)
   
   
 </span>
@@ -205,98 +205,172 @@ ga('send', 'pageview');
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         
-        <img src="/assets/img/kubernetes_logo.jpg" class="img-title" />
+        <img src="/assets/img/pi-nodes.jpg" class="img-title" />
         
       <article role="main" class="blog-post">
-        <p>You&rsquo;ve gone and done it: you oopsie-daisy&rsquo;d some flag in your API server&rsquo;s yaml,
-applied it, and now it&rsquo;s in etcd. Your API server pods are crashlooping, and
-very quickly your dashboard and API go down. Nothing is accessible. You are
-screwed.</p>
+        <p>First, this post (and my Raspberry Pi Kubernetes Cluster) stands on the
+shoulders of giants: work that&rsquo;s already been done and explored by others. This
+post serves pretty much as a &ldquo;here&rsquo;s what I did so it worked for me&rdquo; post
+based on their work.</p>
 
-<h2 id="or-maybe-not">Or Maybe Not</h2>
+<h2 id="pre-reading">Pre-Reading</h2>
 
-<p>You still have a chance! This has been tested on <a href="https://coreos.com/tectonic/">CoreOS&rsquo;s Tectonic</a> 1.8+,
-but might work elsewhere. SSH to any master node (you are running multiple
-masters aren&rsquo;t you?), and sudo to root. The steps: recover the API server
-manifest and secrets from etcd, fix the terrible mistake, start up a
-recovery API pod using bootkube, then fix the real API configuration. Ready?</p>
-
-<h2 id="recovery">Recovery</h2>
-
-<p>A few things are needed for this to work:</p>
+<p>To that end, before proceeding on with this you should read these posts by Cody
+Bunch, Chris Short, and Scott Hanselman on building their own clusters:</p>
 
 <ul>
-<li>etcd client TLS files: CA certificate, certificate, and key</li>
-<li>FQDNs of your etcd nodes</li>
+<li><a href="http://blog.codybunch.com/2018/01/05/OpenFaaS-on-Kubernetes-on-Raspberry-Pi/">OpenFaaS on Kubernetes on Raspberry-Pi</a> by Cody Bunch</li>
+<li><a href="https://chrisshort.net/my-raspberry-pi-kubernetes-cluster/">My Raspberry Pi Kubernetes Cluster</a> by Chris Short</li>
+<li><a href="https://www.hanselman.com/blog/HowToBuildAKubernetesClusterWithARMRaspberryPiThenRunNETCoreOnOpenFaas.aspx">How to Build a Kubernetes Cluster with ARM Raspberry Pi then run .NET Core on OpenFaas</a> by Scott Hanselman</li>
 </ul>
 
-<p>The etcd TLS files can be found in the assests.zip that Tectonic makes at
-install time. They might also be on the master node already, trying to be used
-by the failing API pods. An example:</p>
+<p>You can see references to other people&rsquo;s work in their posts but if I follow all
+the turtles down I&rsquo;ll end up at Charles Babbage. These are good starting points
+if you&rsquo;re trying to do this yourself.</p>
 
-<p><code>/etc/kubernetes/checkpoint-secrets/kube-system/kube-apiserver-259ll/kube-apiserver/etcd-client-ca.crt</code></p>
+<h2 id="shopping-list">Shopping List</h2>
 
-<p>Run this docker container, fixing the paths/domains for your setup:</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ docker run -it <span class="se">\
-</span><span class="se"></span>-v /etc:/etc <span class="se">\
-</span><span class="se"></span>-v /root/recovery:/recovery <span class="se">\
-</span><span class="se"></span>quay.io/coreos/bootkube:v0.8.1 <span class="se">\
-</span><span class="se"></span>/bootkube recover <span class="se">\
-</span><span class="se"></span>--etcd-ca-path /path/to/etcd-client-ca.crt <span class="se">\
-</span><span class="se"></span>--etcd-certificate-path /path/to/etcd-client.crt <span class="se">\
-</span><span class="se"></span>--etcd-private-key-path /path/to/etcd-client.key <span class="se">\
-</span><span class="se"></span>--recovery-dir /recovery/now <span class="se">\
-</span><span class="se"></span>--etcd-servers<span class="o">=</span>https://etcd0.com:2379,https://etcd1.com:2379,https://etcd2.com:2379 <span class="se">\
-</span><span class="se"></span>--kubeconfig /etc/kubernetes/kubeconfig</code></pre></div>
-<p>The expected output looks like this:</p>
-<div class="highlight"><pre class="chroma">Writing asset: /recovery/now/bootstrap-manifests/bootstrap-kube-apiserver.yaml
-Writing asset: /recovery/now/tls/secrets/kube-apiserver/apiserver.crt
-Writing asset: /recovery/now/tls/secrets/kube-apiserver/apiserver.key
-Writing asset: /recovery/now/tls/secrets/kube-apiserver/ca.crt
-Writing asset: /recovery/now/tls/secrets/kube-apiserver/etcd-client-ca.crt
-Writing asset: /recovery/now/tls/secrets/kube-apiserver/etcd-client.crt
-Writing asset: /recovery/now/tls/secrets/kube-apiserver/etcd-client.key
-Writing asset: /recovery/now/tls/secrets/kube-apiserver/oidc-ca.crt
-Writing asset: /recovery/now/tls/secrets/kube-apiserver/service-account.pub
-Writing asset: /recovery/now/tls/secrets/kube-cloud-cfg/config
-Writing asset: /recovery/now/tls/secrets/kube-controller-manager/service-account.key
-Writing asset: /recovery/now/tls/secrets/kube-controller-manager/ca.crt
-Writing asset: /recovery/now/auth/kubeconfig</pre></div>
-<h2 id="repair">Repair</h2>
+<p>Having built a <a href="https://retropie.org.uk/">RetroPie</a> for gaming in the past I was familiar with what was
+needed for at least ONE Raspberry Pi system, but I didn&rsquo;t really know what to
+get for several in a cluster. I mostly went with Chris&rsquo;s shopping list,
+including the Black Box switch from Scott&rsquo;s post.</p>
 
-<p>Now to fix everything. Edit <code>/root/recovery/now/bootstrap-manifests/bootstrap-kube-apiserver.yaml</code>
-and back out the change that ruined the day. Save it, and copy files where they
-need to go:</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ cp -r /root/recovery/now/tls /etc/kubernetes/bootstrap-secrets
-$ cp /root/recovery/now/bootstrap-manifests/bootstrap-kube-apiserver.yaml /etc/kubernetes/manifests</code></pre></div>
-<p>Here&rsquo;s what happens. The kubelet sees the pod manifest in
-<code>/etc/kubernetes/manifests</code> and starts it up. There&rsquo;s now a pod running a single,
-standalone API server. Use <code>kubectl</code> or the dashboard to edit the ACTUAL API
-server&rsquo;s configuration and bounce the pods. Did they all come up?
-Hooray!</p>
+<ul>
+<li>Six <a href="https://smile.amazon.com/gp/product/B01CD5VC92/">Raspberry Pi 3 Model B Motherboards</a></li>
+<li>Six <a href="https://smile.amazon.com/gp/product/B010Q57T02/">SanDisk Ultra 32GB microSDHC UHS-I Card with Adapter, Grey/Red, Standard Packaging (SDSQUNC-032G-GN6MA)</a></li>
+<li>Two <a href="https://smile.amazon.com/gp/product/B072J1BSV6">AmazonBasics USB 2.0 A-Male to Micro B Cable (3 Pack), 3 feet, Black</a></li>
+<li>One <a href="https://smile.amazon.com/gp/product/B01L0KN8OS/">AmazonBasics 6-Port USB Wall Charger (60-Watt) - Black</a></li>
+<li>One <a href="https://smile.amazon.com/gp/product/B01D9130QC/">GeauxRobot Raspberry Pi 3 Model B 6-layer Dog Bone Stack Clear Case Box Enclosure also for Pi 2B B+ A+ B A</a></li>
+<li>One <a href="http://amzn.to/2gNzLzi">Black Box 8-Port Switch</a></li>
+</ul>
 
-<h2 id="cleanup">Cleanup</h2>
+<p>You may notice I screwed up already. The switch is USB powered, and I have six
+Raspberry Pi nodes, and a 6-Port USB Wall Charger. That&rsquo;s 7 USB cords that need
+to plug into 6 ports. Lucky me: the switch also came with a AC power cord.</p>
 
-<p>Last but not least, delete the recovery pod using <code>kubectl</code> or the dashboard,
-and maybe back up the <code>/root/recovery</code> directory in case there are more changes
-to make.</p>
+<p>Scott recommends picking up a router as well, but I just plugged the switch into
+my home router that manages all my other home internet things. What could go
+wrong?</p>
 
-<h4 id="special-thanks">Special Thanks</h4>
+<h2 id="delivery-day">Delivery Day!</h2>
 
-<p>Special thanks to <a href="https://twitter.com/mauilion">Duffie Cooley</a>, who might be a Kubernetes wizard.</p>
+<p>All the components were delivered, and my nephew and I put it together:</p>
+
+
+<div style="position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/ISA4x8MMgRU" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen frameborder="0" title="YouTube Video"></iframe>
+ </div>
+
+
+<h2 id="preparing-the-sdcards">Preparing the SDCards</h2>
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Derping my way through a <a href="https://twitter.com/hashtag/Kubernetes?src=hash&amp;ref_src=twsrc%5Etfw">#Kubernetes</a> install on a <a href="https://twitter.com/hashtag/RaspberryPi?src=hash&amp;ref_src=twsrc%5Etfw">#RaspberryPi</a> cluster</p>&mdash; Hart Hoover (@hhoover) <a href="https://twitter.com/hhoover/status/965424532919119872?ref_src=twsrc%5Etfw">February 19, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<h3 id="building-the-image">Building the Image</h3>
+
+<p>Using <a href="http://blog.codybunch.com/2018/01/05/OpenFaaS-on-Kubernetes-on-Raspberry-Pi/">Cody&rsquo;s work</a> as a base, I created a arm image using Packer and an arm
+image plugin: <a href="https://github.com/solo-io/packer-builder-arm-image">https://github.com/solo-io/packer-builder-arm-image</a>. Like Cody,
+I used the Vagrant VM included in the Packer plugin repository:</p>
+<div class="highlight"><pre class="chroma">git clone https://github.com/solo-io/packer-builder-arm-image
+cd packer-builder-arm-image
+vagrant up &amp;&amp; vagrant ssh</pre></div>
+<p>My main changes to the disk files Cody made were using an SSH key instead of a
+password and using wired, static IP addresses over using the Raspberry Pi&rsquo;s Wifi.
+Since I ran all the nodes off of a switch and my router I was not using the
+master as a network gateway. I also did not install kubeadm here, because I
+wanted to use Ansible for that later. The files I used are <a href="https://gist.github.com/hhoover/dc3149efcf248f4d210ff3b76793952f">here</a>, and they
+need to be in your <code>/vagrant/</code> directory in the VM (it shares your project
+directory automatically).</p>
+
+<p>Inside the Vagrant VM, I ran the same commands. I then shut down the VM:</p>
+<div class="highlight"><pre class="chroma">sudo packer build /vagrant/kubernetes_base.json
+rsync --progress --archive /home/vagrant/output-arm-image/image /vagrant/raspbian-stretch-modified.img</pre></div>
+<h3 id="burning-the-image">Burning the Image</h3>
+
+<p>I used Hypriot&rsquo;s <code>flash</code> utility to burn the image on the SDCard. Since I was
+using static addressing I needed 6 <code>user-data.yml</code> files. I had to do the master
+by itself but for-loop&rsquo;d the workers:</p>
+<div class="highlight"><pre class="chroma">flash --hostname master-00 --userdata ./master-user-data.yml ./raspbian-stretch-modified.img
+for i in {0..4}; do flash --hostname worker-0$i --userdata ./worker-user-data-0$i.yml ./raspbian-stretch-modified.img; done</pre></div>
+<h2 id="ansible-time">Ansible Time</h2>
+
+<p>I switched gears at this point from Cody&rsquo;s work to <a href="https://chrisshort.net/my-raspberry-pi-kubernetes-cluster/">Chris Short&rsquo;s setup</a>.
+Since I&rsquo;m a <a href="https://www.redhat.com/en/blog/coreos-bet">recent Red Hatter</a> wanted to re-learn some Ansible and this seemed
+like a great excuse to dive back in. Chris open sourced his work as the
+<a href="https://rak8s.io/">rak8s</a> project (pronounced &ldquo;rackets&rdquo;).</p>
+
+<p>I powered on my Raspberry Pi cluster, let cloud-init do it&rsquo;s thing with my
+networking setup and SSH key and watched them reboot. They were back online and
+ready for Ansible.</p>
+
+<p>I updated my inventory to reflect my node names and ran it:</p>
+
+<p><code>ansible-playbook cluster.yml</code></p>
+
+<p>&hellip;and it didn&rsquo;t work for me. Shocking, I know.</p>
+
+<h3 id="ch-ch-changes">Ch-Ch-changes</h3>
+
+<p>I had to tweak only a few things to get Ansible to be successful for me. First,
+I had to add some missing APT keys.</p>
+<div class="highlight"><pre class="chroma">- name: Add an apt key-1
+  apt_key:
+    keyserver: keyserver.ubuntu.com
+    id: 8B48AD6246925553
+
+- name: Add an apt key-2
+  apt_key:
+    keyserver: keyserver.ubuntu.com
+    id: 9D6D8F6BC857C906</pre></div>
+<p>Next, Ansible was set to reboot the nodes after changing the <code>/boot/config.txt</code>
+and <code>/boot/cmdline.txt</code> files but skipped the task. To fix it, I changed the
+&ldquo;when&rdquo; line. Maybe it&rsquo;s because I&rsquo;m using Ansible 2.4? Anyway, here&rsquo;s that diff:</p>
+<div class="highlight"><pre class="chroma">diff --git a/roles/common/tasks/main.yml b/roles/common/tasks/main.yml
+index f7585b7..d09fb75 100644
+--- a/roles/common/tasks/main.yml
++++ b/roles/common/tasks/main.yml
+- name: Reboot
+   shell: sleep 2 &amp;&amp; shutdown -r now &#34;Ansible Reboot for /boot/cmdline.txt Change&#34;
+   async: 1
+   poll: 0
+   ignore_errors: True
+-  when: cmdline|changed
++  when: cmdline.changed </pre></div>
+<p>Last but not least, I didn&rsquo;t add the master to /etc/hosts and Ansible wasn&rsquo;t
+picking it up. Since it was a static address I updated the <code>kubeadm join</code>
+command run on the workers to just use the master IP address. Here&rsquo;s the diff:</p>
+<div class="highlight"><pre class="chroma">diff --git a/roles/workers/tasks/main.yml b/roles/workers/tasks/main.yml
+ - name: Join Kubernetes Cluster
+-  shell: kubeadm join --ignore-preflight-errors=all --token {{ token }} {{ groups[&#39;master&#39;][0] }}:6443 --discovery-token-unsafe-skip-ca-verification
++  shell: kubeadm join --ignore-preflight-errors=all --token {{ token }} 192.168.1.101:6443 --discovery-token-unsafe-skip-ca-verification
+   when: kubeadm_reset|succeeded
+   register: kubeadm_join</pre></div>
+<p>I made a few other small changes but I think those are the most important to
+call out here. You can see everything I changed in my fork of rak8s <a href="https://github.com/hhoover/rak8s">here</a>.</p>
+
+<p>Once I made my changes and re-ran Ansible, everything was ALL GOOD. Hooray!</p>
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Got some time today to finish this up. The pi cluster lives! <a href="https://t.co/rKabsQzdnI">pic.twitter.com/rKabsQzdnI</a></p>&mdash; Hart Hoover (@hhoover) <a href="https://twitter.com/hhoover/status/965733597494865920?ref_src=twsrc%5Etfw">February 19, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<h2 id="next-steps">Next Steps</h2>
+
+<p>Now that I did an initial install, I want to get some Let&rsquo;s Encrypt going in
+this cluster for Kubernetes, and start playing with some services at home. This
+cluster, in all honesty, will probably be broken most of the time. But that&rsquo;s
+OK - it&rsquo;s part of the fun!</p>
       </article>
 
       
         <ul class="pager blog-pager">
           
             <li class="previous">
-              <a href="https://harthoover.com/pretty-alertmanager-alerts-in-slack/" data-toggle="tooltip" data-placement="top" title="Pretty AlertManager Alerts in Slack">&larr; Previous Post</a>
+              <a href="https://harthoover.com/fixing-a-broken-kubernetes-api-server/" data-toggle="tooltip" data-placement="top" title="Fixing a Broken Kubernetes API server">&larr; Previous Post</a>
             </li>
           
-          
-            <li class="next">
-              <a href="https://harthoover.com/kubernetes-1.9-on-a-raspberry-pi-cluster/" data-toggle="tooltip" data-placement="top" title="Kubernetes 1.9 on a Raspberry Pi Cluster">Next Post &rarr;</a>
-            </li>
           
         </ul>
       

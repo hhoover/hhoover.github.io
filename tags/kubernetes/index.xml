@@ -7,10 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>hart.hoover@gmail.com (Hart Hoover)</managingEditor>
     <webMaster>hart.hoover@gmail.com (Hart Hoover)</webMaster>
-    <lastBuildDate>Tue, 13 Feb 2018 09:27:07 -0600</lastBuildDate>
+    <lastBuildDate>Thu, 22 Feb 2018 14:05:28 -0600</lastBuildDate>
     
 	<atom:link href="https://harthoover.com/tags/kubernetes/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Kubernetes 1.9 on a Raspberry Pi Cluster</title>
+      <link>https://harthoover.com/kubernetes-1.9-on-a-raspberry-pi-cluster/</link>
+      <pubDate>Thu, 22 Feb 2018 14:05:28 -0600</pubDate>
+      <author>hart.hoover@gmail.com (Hart Hoover)</author>
+      <guid>https://harthoover.com/kubernetes-1.9-on-a-raspberry-pi-cluster/</guid>
+      <description>&lt;p&gt;First, this post (and my Raspberry Pi Kubernetes Cluster) stands on the
+shoulders of giants: work that&amp;rsquo;s already been done and explored by others. This
+post serves pretty much as a &amp;ldquo;here&amp;rsquo;s what I did so it worked for me&amp;rdquo; post
+based on their work.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Fixing a Broken Kubernetes API server</title>
