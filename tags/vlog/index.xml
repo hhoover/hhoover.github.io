@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vlog on Hart Hoover</title>
+    <link>https://harthoover.com/tags/vlog/</link>
+    <description>Recent content in Vlog on Hart Hoover</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>hart.hoover@gmail.com (Hart Hoover)</managingEditor>
+    <webMaster>hart.hoover@gmail.com (Hart Hoover)</webMaster>
+    <lastBuildDate>Thu, 08 Mar 2018 07:55:49 -0600</lastBuildDate>
+    
+	<atom:link href="https://harthoover.com/tags/vlog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Memphis or Bust</title>
+      <link>https://harthoover.com/memphis-or-bust/</link>
+      <pubDate>Thu, 08 Mar 2018 07:55:49 -0600</pubDate>
+      <author>hart.hoover@gmail.com (Hart Hoover)</author>
+      <guid>https://harthoover.com/memphis-or-bust/</guid>
+      <description>   </description>
+    </item>
+    
+  </channel>
+</rss>

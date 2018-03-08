@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>hart.hoover@gmail.com (Hart Hoover)</managingEditor>
     <webMaster>hart.hoover@gmail.com (Hart Hoover)</webMaster>
-    <lastBuildDate>Thu, 22 Feb 2018 14:05:28 -0600</lastBuildDate>
+    <lastBuildDate>Thu, 08 Mar 2018 07:55:49 -0600</lastBuildDate>
     
 	<atom:link href="https://harthoover.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Memphis or Bust</title>
+      <link>https://harthoover.com/memphis-or-bust/</link>
+      <pubDate>Thu, 08 Mar 2018 07:55:49 -0600</pubDate>
+      <author>hart.hoover@gmail.com (Hart Hoover)</author>
+      <guid>https://harthoover.com/memphis-or-bust/</guid>
+      <description>   </description>
+    </item>
     
     <item>
       <title>Kubernetes 1.9 on a Raspberry Pi Cluster</title>
