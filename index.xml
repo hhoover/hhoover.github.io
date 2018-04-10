@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>hart.hoover@gmail.com (Hart Hoover)</managingEditor>
     <webMaster>hart.hoover@gmail.com (Hart Hoover)</webMaster>
-    <lastBuildDate>Thu, 29 Mar 2018 16:30:00 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 10 Apr 2018 09:48:23 -0500</lastBuildDate>
     
 	<atom:link href="https://harthoover.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>April Kubernetes Things</title>
+      <link>https://harthoover.com/april-kubernetes-things/</link>
+      <pubDate>Tue, 10 Apr 2018 09:48:23 -0500</pubDate>
+      <author>hart.hoover@gmail.com (Hart Hoover)</author>
+      <guid>https://harthoover.com/april-kubernetes-things/</guid>
+      <description>&lt;p&gt;Some interesting thoughts on things from the &lt;a href=&#34;http://kube.news/&#34;&gt;KubeWeekly&lt;/a&gt; emails&amp;hellip;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>My Wife, Duckmaster</title>

@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>hart.hoover@gmail.com (Hart Hoover)</managingEditor>
     <webMaster>hart.hoover@gmail.com (Hart Hoover)</webMaster>
-    <lastBuildDate>Thu, 22 Feb 2018 14:05:28 -0600</lastBuildDate>
+    <lastBuildDate>Tue, 10 Apr 2018 09:48:23 -0500</lastBuildDate>
     
 	<atom:link href="https://harthoover.com/tags/kubernetes/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>April Kubernetes Things</title>
+      <link>https://harthoover.com/april-kubernetes-things/</link>
+      <pubDate>Tue, 10 Apr 2018 09:48:23 -0500</pubDate>
+      <author>hart.hoover@gmail.com (Hart Hoover)</author>
+      <guid>https://harthoover.com/april-kubernetes-things/</guid>
+      <description>&lt;p&gt;Some interesting thoughts on things from the &lt;a href=&#34;http://kube.news/&#34;&gt;KubeWeekly&lt;/a&gt; emails&amp;hellip;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Kubernetes 1.9 on a Raspberry Pi Cluster</title>
