@@ -58,15 +58,6 @@
     </item>
     
     <item>
-      <title>Cd</title>
-      <link>https://harthoover.com/tags/cd/</link>
-      <pubDate>Tue, 24 Oct 2017 11:10:46 -0600</pubDate>
-      <author>hart.hoover@gmail.com (Hart Hoover)</author>
-      <guid>https://harthoover.com/tags/cd/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Chemex</title>
       <link>https://harthoover.com/tags/chemex/</link>
       <pubDate>Fri, 12 Jun 2015 14:41:15 +0000</pubDate>
@@ -76,11 +67,11 @@
     </item>
     
     <item>
-      <title>Ci</title>
-      <link>https://harthoover.com/tags/ci/</link>
-      <pubDate>Tue, 24 Oct 2017 11:10:46 -0600</pubDate>
+      <title>Cicd</title>
+      <link>https://harthoover.com/tags/cicd/</link>
+      <pubDate>Fri, 07 Sep 2018 11:19:46 -0500</pubDate>
       <author>hart.hoover@gmail.com (Hart Hoover)</author>
-      <guid>https://harthoover.com/tags/ci/</guid>
+      <guid>https://harthoover.com/tags/cicd/</guid>
       <description></description>
     </item>
     
@@ -112,18 +103,9 @@
     </item>
     
     <item>
-      <title>Devops</title>
-      <link>https://harthoover.com/tags/devops/</link>
-      <pubDate>Sun, 18 Dec 2016 11:48:04 -0600</pubDate>
-      <author>hart.hoover@gmail.com (Hart Hoover)</author>
-      <guid>https://harthoover.com/tags/devops/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Docker</title>
       <link>https://harthoover.com/tags/docker/</link>
-      <pubDate>Thu, 22 Feb 2018 14:05:28 -0600</pubDate>
+      <pubDate>Fri, 07 Sep 2018 11:19:46 -0500</pubDate>
       <author>hart.hoover@gmail.com (Hart Hoover)</author>
       <guid>https://harthoover.com/tags/docker/</guid>
       <description></description>
@@ -193,15 +175,6 @@
     </item>
     
     <item>
-      <title>Jenkins</title>
-      <link>https://harthoover.com/tags/jenkins/</link>
-      <pubDate>Tue, 24 Oct 2017 11:10:46 -0600</pubDate>
-      <author>hart.hoover@gmail.com (Hart Hoover)</author>
-      <guid>https://harthoover.com/tags/jenkins/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Kalita</title>
       <link>https://harthoover.com/tags/kalita/</link>
       <pubDate>Fri, 29 May 2015 19:31:49 +0000</pubDate>
@@ -213,7 +186,7 @@
     <item>
       <title>Kubernetes</title>
       <link>https://harthoover.com/tags/kubernetes/</link>
-      <pubDate>Tue, 10 Apr 2018 09:48:23 -0500</pubDate>
+      <pubDate>Fri, 07 Sep 2018 11:19:46 -0500</pubDate>
       <author>hart.hoover@gmail.com (Hart Hoover)</author>
       <guid>https://harthoover.com/tags/kubernetes/</guid>
       <description></description>
@@ -324,15 +297,6 @@
       <pubDate>Sun, 11 Jan 2015 23:48:40 +0000</pubDate>
       <author>hart.hoover@gmail.com (Hart Hoover)</author>
       <guid>https://harthoover.com/tags/starbucks/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Talks</title>
-      <link>https://harthoover.com/tags/talks/</link>
-      <pubDate>Tue, 24 Oct 2017 11:10:46 -0600</pubDate>
-      <author>hart.hoover@gmail.com (Hart Hoover)</author>
-      <guid>https://harthoover.com/tags/talks/</guid>
       <description></description>
     </item>
     

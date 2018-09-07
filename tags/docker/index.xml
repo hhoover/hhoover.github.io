@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>hart.hoover@gmail.com (Hart Hoover)</managingEditor>
     <webMaster>hart.hoover@gmail.com (Hart Hoover)</webMaster>
-    <lastBuildDate>Thu, 22 Feb 2018 14:05:28 -0600</lastBuildDate>
+    <lastBuildDate>Fri, 07 Sep 2018 11:19:46 -0500</lastBuildDate>
     
 	<atom:link href="https://harthoover.com/tags/docker/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Using Kaniko for Container Builds on Kubernetes</title>
+      <link>https://harthoover.com/using-kaniko-for-container-builds-on-kubernetes/</link>
+      <pubDate>Fri, 07 Sep 2018 11:19:46 -0500</pubDate>
+      <author>hart.hoover@gmail.com (Hart Hoover)</author>
+      <guid>https://harthoover.com/using-kaniko-for-container-builds-on-kubernetes/</guid>
+      <description>&lt;p&gt;CI/CD with Kubernetes is really at least two pipelines, potentially using multiple tools to get the job done.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Kubernetes 1.9 on a Raspberry Pi Cluster</title>
@@ -34,16 +43,6 @@ based on their work.&lt;/p&gt;</description>
 applied it, and now it&amp;rsquo;s in etcd. Your API server pods are crashlooping, and
 very quickly your dashboard and API go down. Nothing is accessible. You are
 screwed.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>CI/CD with Kubernetes</title>
-      <link>https://harthoover.com/ci/cd-with-kubernetes/</link>
-      <pubDate>Tue, 24 Oct 2017 11:10:46 -0600</pubDate>
-      <author>hart.hoover@gmail.com (Hart Hoover)</author>
-      <guid>https://harthoover.com/ci/cd-with-kubernetes/</guid>
-      <description>&lt;p&gt;I gave this talk at &lt;a href=&#34;https://www.meetup.com/Kubernetes-San-Antonio/events/243923168/&#34;&gt;Kubernetes San Antonio&lt;/a&gt; on CI/CD options with
-Kubernetes. Check out &lt;a href=&#34;https://github.com/hhoover/jenkinetes&#34;&gt;manifests I used&lt;/a&gt; for Jenkins as a demo.&lt;/p&gt;</description>
     </item>
     
   </channel>

@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>hart.hoover@gmail.com (Hart Hoover)</managingEditor>
     <webMaster>hart.hoover@gmail.com (Hart Hoover)</webMaster>
-    <lastBuildDate>Wed, 25 Apr 2018 09:57:59 -0500</lastBuildDate>
+    <lastBuildDate>Fri, 07 Sep 2018 11:19:46 -0500</lastBuildDate>
     
 	<atom:link href="https://harthoover.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Using Kaniko for Container Builds on Kubernetes</title>
+      <link>https://harthoover.com/using-kaniko-for-container-builds-on-kubernetes/</link>
+      <pubDate>Fri, 07 Sep 2018 11:19:46 -0500</pubDate>
+      <author>hart.hoover@gmail.com (Hart Hoover)</author>
+      <guid>https://harthoover.com/using-kaniko-for-container-builds-on-kubernetes/</guid>
+      <description>&lt;p&gt;CI/CD with Kubernetes is really at least two pipelines, potentially using multiple tools to get the job done.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Thoughts on the 2018 SATechTrek</title>
@@ -81,26 +90,6 @@ screwed.&lt;/p&gt;</description>
       <guid>https://harthoover.com/pretty-alertmanager-alerts-in-slack/</guid>
       <description>&lt;p&gt;Prometheus alerting through AlertManager can be configured to send messages to
 Slack. Alerts sent to Slack, by default, are not very rich in detail:&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>CI/CD with Kubernetes</title>
-      <link>https://harthoover.com/ci/cd-with-kubernetes/</link>
-      <pubDate>Tue, 24 Oct 2017 11:10:46 -0600</pubDate>
-      <author>hart.hoover@gmail.com (Hart Hoover)</author>
-      <guid>https://harthoover.com/ci/cd-with-kubernetes/</guid>
-      <description>&lt;p&gt;I gave this talk at &lt;a href=&#34;https://www.meetup.com/Kubernetes-San-Antonio/events/243923168/&#34;&gt;Kubernetes San Antonio&lt;/a&gt; on CI/CD options with
-Kubernetes. Check out &lt;a href=&#34;https://github.com/hhoover/jenkinetes&#34;&gt;manifests I used&lt;/a&gt; for Jenkins as a demo.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Dinner and Code Meetup: Understanding DevOps</title>
-      <link>https://harthoover.com/dinner-and-code-meetup-understanding-devops/</link>
-      <pubDate>Sun, 18 Dec 2016 11:48:04 -0600</pubDate>
-      <author>hart.hoover@gmail.com (Hart Hoover)</author>
-      <guid>https://harthoover.com/dinner-and-code-meetup-understanding-devops/</guid>
-      <description>&lt;p&gt;I gave this talk at the &lt;a href=&#34;https://www.meetup.com/Dinner-and-Code-San-Antonio/events/235718681/&#34;&gt;Dinner and Code San Antonio Meetup&lt;/a&gt; as an introduction to
-DevOps practices for those new to software development.&lt;/p&gt;</description>
     </item>
     
     <item>
