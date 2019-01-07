@@ -23,16 +23,6 @@
   </url>
   
   <url>
-    <loc>https://harthoover.com/my-wife-duckmaster/</loc>
-    <lastmod>2018-03-29T16:30:00-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://harthoover.com/memphis-or-bust/</loc>
-    <lastmod>2018-03-08T07:55:49-06:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://harthoover.com/kubernetes-1.9-on-a-raspberry-pi-cluster/</loc>
     <lastmod>2018-02-22T14:05:28-06:00</lastmod>
   </url>
@@ -434,24 +424,6 @@
   <url>
     <loc>https://harthoover.com/tags/</loc>
     <lastmod>2015-03-18T14:49:07+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://harthoover.com/tags/travel/</loc>
-    <lastmod>2018-03-29T16:30:00-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://harthoover.com/tags/video/</loc>
-    <lastmod>2018-03-29T16:30:00-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://harthoover.com/tags/vlog/</loc>
-    <lastmod>2018-03-29T16:30:00-05:00</lastmod>
     <priority>0</priority>
   </url>
   
