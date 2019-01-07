@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://harthoover.com/the-san-antonio-devops-meetup-a-retrospective/</loc>
+    <lastmod>2019-01-07T09:10:47-06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://harthoover.com/using-kaniko-for-container-builds-on-kubernetes/</loc>
     <lastmod>2018-09-07T11:19:46-05:00</lastmod>
   </url>
@@ -320,7 +325,7 @@
   
   <url>
     <loc>https://harthoover.com/</loc>
-    <lastmod>2018-09-07T11:19:46-05:00</lastmod>
+    <lastmod>2019-01-07T09:10:47-06:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -343,6 +348,12 @@
   </url>
   
   <url>
+    <loc>https://harthoover.com/tags/meetups/</loc>
+    <lastmod>2019-01-07T09:10:47-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://harthoover.com/tags/monitoring/</loc>
     <lastmod>2018-02-01T10:43:53-06:00</lastmod>
     <priority>0</priority>
@@ -356,7 +367,7 @@
   
   <url>
     <loc>https://harthoover.com/post/</loc>
-    <lastmod>2018-09-07T11:19:46-05:00</lastmod>
+    <lastmod>2019-01-07T09:10:47-06:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -404,7 +415,7 @@
   
   <url>
     <loc>https://harthoover.com/tags/san-antonio/</loc>
-    <lastmod>2018-04-25T09:57:59-05:00</lastmod>
+    <lastmod>2019-01-07T09:10:47-06:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>hart.hoover@gmail.com (Hart Hoover)</managingEditor>
     <webMaster>hart.hoover@gmail.com (Hart Hoover)</webMaster>
-    <lastBuildDate>Fri, 07 Sep 2018 11:19:46 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 07 Jan 2019 09:10:47 -0600</lastBuildDate>
     
 	<atom:link href="https://harthoover.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>The San Antonio DevOps Meetup: A Retrospective</title>
+      <link>https://harthoover.com/the-san-antonio-devops-meetup-a-retrospective/</link>
+      <pubDate>Mon, 07 Jan 2019 09:10:47 -0600</pubDate>
+      <author>hart.hoover@gmail.com (Hart Hoover)</author>
+      <guid>https://harthoover.com/the-san-antonio-devops-meetup-a-retrospective/</guid>
+      <description>&lt;p&gt;The San Antonio DevOps meetup is no more, so I wanted to document my thoughts
+and feelings on what was good, what was terrible, and if I did it again, what I
+would change.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Using Kaniko for Container Builds on Kubernetes</title>
