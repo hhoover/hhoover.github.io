@@ -19,7 +19,7 @@
       <author>hart.hoover@gmail.com (Hart Hoover)</author>
       <guid>https://harthoover.com/pretty-alertmanager-alerts-in-slack/</guid>
       <description>&lt;p&gt;Prometheus alerting through AlertManager can be configured to send messages to
-Slack. Alerts sent to Slack, by default, are not very rich in detail:&lt;/p&gt;</description>
+Slack.&lt;/p&gt;</description>
     </item>
     
   </channel>

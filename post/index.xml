@@ -7,10 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>hart.hoover@gmail.com (Hart Hoover)</managingEditor>
     <webMaster>hart.hoover@gmail.com (Hart Hoover)</webMaster>
-    <lastBuildDate>Mon, 07 Jan 2019 09:10:47 -0600</lastBuildDate>
+    <lastBuildDate>Mon, 08 Apr 2019 09:10:47 -0600</lastBuildDate>
     
 	<atom:link href="https://harthoover.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>What&#39;s New in 2019</title>
+      <link>https://harthoover.com/whats-new-in-2019/</link>
+      <pubDate>Mon, 08 Apr 2019 09:10:47 -0600</pubDate>
+      <author>hart.hoover@gmail.com (Hart Hoover)</author>
+      <guid>https://harthoover.com/whats-new-in-2019/</guid>
+      <description>&lt;p&gt;I wanted to blog quickly about what I&amp;rsquo;ve been up to lately, because
+2018 was crazy (so I want to look back a little) and there&amp;rsquo;s stuff to look
+forward to in 2019. Yes I know it&amp;rsquo;s April, it&amp;rsquo;s taken a bit to figure it out
+which is understandable if you read on.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>The San Antonio DevOps Meetup: A Retrospective</title>
@@ -38,7 +50,7 @@ would change.&lt;/p&gt;</description>
       <pubDate>Wed, 25 Apr 2018 09:57:59 -0500</pubDate>
       <author>hart.hoover@gmail.com (Hart Hoover)</author>
       <guid>https://harthoover.com/thoughts-on-the-2018-satechtrek/</guid>
-      <description>&lt;p&gt;The San Antonio tech ecosystem is better than ever, but still has a long way to go. I saw lots of great demos, talked to really smart people, and there&amp;rsquo;s a &lt;a href=&#34;https://woai.iheart.com/content/2018-04-25-fiesta-tech-trek-introduces-people-to-citys-growing-tech-companies/&#34;&gt;lot to celebrate&lt;/a&gt;. However, there are some things that I&amp;rsquo;m still concerned about for the immediate future, and there are a few ways I think the event can be even better in 2019. &lt;/p&gt;</description>
+      <description>&lt;p&gt;The San Antonio tech ecosystem is better than ever, but still has a long way to go. I saw lots of great demos, talked to really smart people, and there&amp;rsquo;s a &lt;a href=&#34;https://woai.iheart.com/content/2018-04-25-fiesta-tech-trek-introduces-people-to-citys-growing-tech-companies/&#34;&gt;lot to celebrate&lt;/a&gt;. However, there are some things that I&amp;rsquo;m still concerned about for the immediate future, and there are a few ways I think the event can be even better in 2019.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -81,7 +93,7 @@ screwed.&lt;/p&gt;</description>
       <author>hart.hoover@gmail.com (Hart Hoover)</author>
       <guid>https://harthoover.com/pretty-alertmanager-alerts-in-slack/</guid>
       <description>&lt;p&gt;Prometheus alerting through AlertManager can be configured to send messages to
-Slack. Alerts sent to Slack, by default, are not very rich in detail:&lt;/p&gt;</description>
+Slack.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -207,10 +219,10 @@ Being the Friday after an overnight rain, I needed to get a bit more wired up th
     
     <item>
       <title>SHB Las Palomas - Blue State Coffee</title>
-      <link>https://harthoover.com/shb-las-palomas---blue-state-coffee/</link>
+      <link>https://harthoover.com/shb-las-palomas-blue-state-coffee/</link>
       <pubDate>Mon, 06 Apr 2015 20:51:38 +0000</pubDate>
       <author>hart.hoover@gmail.com (Hart Hoover)</author>
-      <guid>https://harthoover.com/shb-las-palomas---blue-state-coffee/</guid>
+      <guid>https://harthoover.com/shb-las-palomas-blue-state-coffee/</guid>
       <description>A friend just returned from a Boston trip with some Costa Rican goodness courtesy of Blue State Coffee.
 Blue State is a coffee roastery &amp;amp; shop with several locations in New England, with a heavy focus on philanthropy:
 Blue State Coffee donates 2% of sales to local non-profit organizations suggested by our customers. We choose 4 local non-profit organizations at each of our stores twice a year for a 6 month period.</description>
@@ -237,30 +249,30 @@ http://alamocity.citymomsblog.com/2015/03/24/top-15-san-antonio-coffee-shops/</d
     
     <item>
       <title>Giant Steps - Blue Bottle</title>
-      <link>https://harthoover.com/giant-steps---blue-bottle/</link>
+      <link>https://harthoover.com/giant-steps-blue-bottle/</link>
       <pubDate>Tue, 24 Mar 2015 20:06:18 +0000</pubDate>
       <author>hart.hoover@gmail.com (Hart Hoover)</author>
-      <guid>https://harthoover.com/giant-steps---blue-bottle/</guid>
+      <guid>https://harthoover.com/giant-steps-blue-bottle/</guid>
       <description>Yet another Blue Bottle coffee, I know. It&amp;rsquo;s just so darned tasty. This coffee is extremely viscous and chocolatey. I feel like I&amp;rsquo;m drinking Hershey Syrup. The notes from Blue Bottle (see below) actually recommend cream.
 I&amp;rsquo;m usually against cream in coffee because I feel like it kills flavor. If I wanted cream I could drink a Keurig K-Cup and be good to go. But&amp;hellip; this time I relented only because we have some crazy good cream on hand from Promised Land Dairy.</description>
     </item>
     
     <item>
       <title>Three Africans - Blue Bottle</title>
-      <link>https://harthoover.com/three-africans---blue-bottle/</link>
+      <link>https://harthoover.com/three-africans-blue-bottle/</link>
       <pubDate>Wed, 18 Mar 2015 14:49:07 +0000</pubDate>
       <author>hart.hoover@gmail.com (Hart Hoover)</author>
-      <guid>https://harthoover.com/three-africans---blue-bottle/</guid>
+      <guid>https://harthoover.com/three-africans-blue-bottle/</guid>
       <description>Stop the presses. I may have just had some of the best coffee I&amp;rsquo;ve ever tasted. As you can probably tell based on reading posts on this blog, I&amp;rsquo;m a huge promoter of Blue Bottle Coffee. For Texans who may be reading this, it&amp;rsquo;s like the Franklin BBQ of coffee, which is no small statement. It&amp;rsquo;s amazing, and today&amp;rsquo;s coffee is no exception. I&amp;rsquo;m drinking the Three Africans blend.
 Notes from Blue Bottle:</description>
     </item>
     
     <item>
       <title>West Texas Wildfire - Big Bend Coffee</title>
-      <link>https://harthoover.com/west-texas-wildfire---big-bend-coffee/</link>
+      <link>https://harthoover.com/west-texas-wildfire-big-bend-coffee/</link>
       <pubDate>Thu, 12 Mar 2015 16:56:15 +0000</pubDate>
       <author>hart.hoover@gmail.com (Hart Hoover)</author>
-      <guid>https://harthoover.com/west-texas-wildfire---big-bend-coffee/</guid>
+      <guid>https://harthoover.com/west-texas-wildfire-big-bend-coffee/</guid>
       <description>Good morning! Today I&amp;rsquo;m drinking coffee from Big Bend Coffee Roasters from the bustling metropolis of Marfa, Texas. On the inside, the roastery looks like it&amp;rsquo;s in a temporary building used by overcrowded Texas schools or oil field offices, but I was assured it was an actual freestanding building. The people are friendly and hey, you&amp;rsquo;re in Marfa. This isn&amp;rsquo;t exactly Stumptown country.
 This coffee&amp;rsquo;s label is less about the coffee and more about the name of the coffee, but a few things stand out:</description>
     </item>
@@ -277,10 +289,10 @@ This coffee&amp;rsquo;s label is less about the coffee and more about the name o
     
     <item>
       <title>Colombia - First Ascent</title>
-      <link>https://harthoover.com/colombia---first-ascent/</link>
+      <link>https://harthoover.com/colombia-first-ascent/</link>
       <pubDate>Thu, 12 Feb 2015 22:15:06 +0000</pubDate>
       <author>hart.hoover@gmail.com (Hart Hoover)</author>
-      <guid>https://harthoover.com/colombia---first-ascent/</guid>
+      <guid>https://harthoover.com/colombia-first-ascent/</guid>
       <description>In my last post (earlier today) I was drinking Ethopian coffee from First Ascent Coffee Roasters. in Crested Butte, CO. This time I&amp;rsquo;m drinking the Colombian coffee.
 While the Ethiopian coffee had a very lemon-y taste (which was great!) this coffee has strong chocolate flavors. While the Ethipoian would be a great way to start the day, this is a great coffee to end it.
 Some background on the Timana region: The name Timana originates from the tribe that originally inhabited this region, the Timanaes, who prided themselves in being the fiercest and most dominant group if the south of Colombia.</description>
@@ -288,29 +300,29 @@ Some background on the Timana region: The name Timana originates from the tribe 
     
     <item>
       <title>Ethiopia Natural - First Ascent</title>
-      <link>https://harthoover.com/ethiopia-natural---first-ascent/</link>
+      <link>https://harthoover.com/ethiopia-natural-first-ascent/</link>
       <pubDate>Thu, 12 Feb 2015 15:43:54 +0000</pubDate>
       <author>hart.hoover@gmail.com (Hart Hoover)</author>
-      <guid>https://harthoover.com/ethiopia-natural---first-ascent/</guid>
+      <guid>https://harthoover.com/ethiopia-natural-first-ascent/</guid>
       <description>My sister-in-law went skiing recently in the small mountain town of Crested Butte, CO. I&amp;rsquo;m always on the hunt for coffee I can&amp;rsquo;t normally get, so I did a little research (read: I googled it) and found First Ascent Coffee Roasters. First Ascent only roasts in small batches, claiming a laser-focus on high quality. My sister-in-law brought back two of their coffees: the Ethiopian coffee I&amp;rsquo;m drinking now and one from Columbia.</description>
     </item>
     
     <item>
       <title>Burundi Kalico - Merit</title>
-      <link>https://harthoover.com/burundi-kalico---merit/</link>
+      <link>https://harthoover.com/burundi-kalico-merit/</link>
       <pubDate>Wed, 11 Feb 2015 14:03:45 +0000</pubDate>
       <author>hart.hoover@gmail.com (Hart Hoover)</author>
-      <guid>https://harthoover.com/burundi-kalico---merit/</guid>
+      <guid>https://harthoover.com/burundi-kalico-merit/</guid>
       <description>I was waiting for the Chef meetup to start at Local and decided to try the new Burundi Kalico coffee from Merit Roasting.
 It&amp;rsquo;s very light, bright, and delicious. As you can see from the photo, it claims flavors of peach and brown sugar. Maybe I&amp;rsquo;ve been drinking heavier coffees too much recently but the lightness here is most refreshing. I&amp;rsquo;m almost too impatient for coffee - I want to drink it immediately but coffee always gets better if you JUST WAIT for a minute.</description>
     </item>
     
     <item>
       <title>Rwanda Abakundakawa - Merit</title>
-      <link>https://harthoover.com/rwanda-abakundakawa---merit/</link>
+      <link>https://harthoover.com/rwanda-abakundakawa-merit/</link>
       <pubDate>Mon, 02 Feb 2015 15:43:48 +0000</pubDate>
       <author>hart.hoover@gmail.com (Hart Hoover)</author>
-      <guid>https://harthoover.com/rwanda-abakundakawa---merit/</guid>
+      <guid>https://harthoover.com/rwanda-abakundakawa-merit/</guid>
       <description>Today&amp;rsquo;s delicious coffee comes from Rwanda by way of San Antonio&amp;rsquo;s own Merit Roasting.
 Some background on the region: Abakundakawa is a 1,700 member cooperative that mills coffee at the Rushashi washing station in Rwanada. The average altitude there is 1,600 to 1,800 meters for coffee production.
 This coffee is definitely tart, with the red currant flavor shining through. Being a Monday morning, I made the mistake of starting to drink this coffee immediately after brewing it.</description>
@@ -318,20 +330,20 @@ This coffee is definitely tart, with the red currant flavor shining through. Bei
     
     <item>
       <title>Colombia Cauca Caloto - Blue Bottle</title>
-      <link>https://harthoover.com/colombia-cauca-caloto---blue-bottle/</link>
+      <link>https://harthoover.com/colombia-cauca-caloto-blue-bottle/</link>
       <pubDate>Thu, 29 Jan 2015 16:13:08 +0000</pubDate>
       <author>hart.hoover@gmail.com (Hart Hoover)</author>
-      <guid>https://harthoover.com/colombia-cauca-caloto---blue-bottle/</guid>
+      <guid>https://harthoover.com/colombia-cauca-caloto-blue-bottle/</guid>
       <description>It&amp;rsquo;s been a while since I&amp;rsquo;ve posted here, but I haven&amp;rsquo;t had any new coffee lately to post about! So here we are, a new Blue Bottle shipment and a new coffee - this time from Colombia.
 The tasting notes from Blue Bottle claim flavors of tropical fruit, tangerine, dates and toffee. I can taste the toffee and a touch of fruit. It is, as usual, really good coffee from Blue Bottle.</description>
     </item>
     
     <item>
       <title>Flat White - Starbucks</title>
-      <link>https://harthoover.com/flat-white---starbucks/</link>
+      <link>https://harthoover.com/flat-white-starbucks/</link>
       <pubDate>Sun, 11 Jan 2015 23:48:40 +0000</pubDate>
       <author>hart.hoover@gmail.com (Hart Hoover)</author>
-      <guid>https://harthoover.com/flat-white---starbucks/</guid>
+      <guid>https://harthoover.com/flat-white-starbucks/</guid>
       <description>If you&amp;rsquo;ve read anything else on here, the reaction to this post is probably along these lines:
 *&amp;ldquo;What? Starbucks? I thought I knew you.&amp;rdquo;*
 You&amp;rsquo;re right, but sometimes you grab what&amp;rsquo;s convienent. Plus, Starbucks has had a significant (arguably positive) impact on the world of coffee. Without the Second Wave, we would all still be drinking Folgers. Remember your history.
@@ -350,10 +362,10 @@ The purist would say &amp;ldquo;You are NOT cold brewing.&amp;rdquo; They would 
     
     <item>
       <title>Colombia La Virgen AA - Merit</title>
-      <link>https://harthoover.com/colombia-la-virgen-aa---merit/</link>
+      <link>https://harthoover.com/colombia-la-virgen-aa-merit/</link>
       <pubDate>Mon, 05 Jan 2015 16:00:30 +0000</pubDate>
       <author>hart.hoover@gmail.com (Hart Hoover)</author>
-      <guid>https://harthoover.com/colombia-la-virgen-aa---merit/</guid>
+      <guid>https://harthoover.com/colombia-la-virgen-aa-merit/</guid>
       <description>Merit Roasting is the brand new roasting arm of San Antonio&amp;rsquo;s Local Coffee. Local is a fantastic coffee shop with three locations, but I mostly hang out at the Sonterra location as it&amp;rsquo;s the best coffee available in any direction for several miles. If you are going to visit Local Sonterra, I recommend against going on a Sunday - It seems to be their busiest day of the week.
 This Colombian roast claims to have some light citrus, but it seems more like &amp;ldquo;Silky&amp;rdquo; and &amp;ldquo;Caramel&amp;rdquo; shine through more here.</description>
     </item>
@@ -370,30 +382,30 @@ This particular coffee is meant to be served as an espresso, however, I decided 
     
     <item>
       <title>Costa Rica Chispita - Nozy Coffee</title>
-      <link>https://harthoover.com/costa-rica-chispita---nozy-coffee/</link>
+      <link>https://harthoover.com/costa-rica-chispita-nozy-coffee/</link>
       <pubDate>Fri, 02 Jan 2015 21:07:12 +0000</pubDate>
       <author>hart.hoover@gmail.com (Hart Hoover)</author>
-      <guid>https://harthoover.com/costa-rica-chispita---nozy-coffee/</guid>
+      <guid>https://harthoover.com/costa-rica-chispita-nozy-coffee/</guid>
       <description>Today I&amp;rsquo;m drinking some Costa Rican coffee by way of Japan. A coworker brought back some coffee from a recent trip to Asia, this coffee among them. Nozy Coffee&amp;rsquo;s &amp;ldquo;The Roastery&amp;rdquo; is apparently supplying beans to several highly regarded Tokyo coffee shops. If you find yourself going to Tokyo, there&amp;rsquo;s a decent review of Nozy Coffee on Timeout.jp.
 This particular coffee, the Costa Rica Chispita, was roasted on November 28th so it&amp;rsquo;s possible the flavor has diminished, but I don&amp;rsquo;t really taste all the things claimed on the label.</description>
     </item>
     
     <item>
       <title>Black &amp; Blue - Cuvée</title>
-      <link>https://harthoover.com/black--blue---cuv%C3%A9e/</link>
+      <link>https://harthoover.com/black-blue-cuv%C3%A9e/</link>
       <pubDate>Thu, 01 Jan 2015 18:40:14 +0000</pubDate>
       <author>hart.hoover@gmail.com (Hart Hoover)</author>
-      <guid>https://harthoover.com/black--blue---cuv%C3%A9e/</guid>
+      <guid>https://harthoover.com/black-blue-cuv%C3%A9e/</guid>
       <description>Happy New Year! Even though it&amp;rsquo;s cold outside it is hard to resist the temptation of Cuvée&amp;rsquo;s cold brew coffee. It comes in a nitrogen-carbonated can that really packs a nice caffeine punch. My theory is the nitrogen bubbles accelrate the absorption of caffeine in the blood, because once I drink one of these things I feel pretty much invincible.
   You can purchase these cans at the Cuvée Coffee Bar in East Austin, and various grocery stores in the Austin area.</description>
     </item>
     
     <item>
       <title>Ethiopia Guji Suke Quto - Blue Bottle</title>
-      <link>https://harthoover.com/ethiopia-guji-suke-quto---blue-bottle/</link>
+      <link>https://harthoover.com/ethiopia-guji-suke-quto-blue-bottle/</link>
       <pubDate>Wed, 31 Dec 2014 16:24:54 +0000</pubDate>
       <author>hart.hoover@gmail.com (Hart Hoover)</author>
-      <guid>https://harthoover.com/ethiopia-guji-suke-quto---blue-bottle/</guid>
+      <guid>https://harthoover.com/ethiopia-guji-suke-quto-blue-bottle/</guid>
       <description>This month&amp;rsquo;s Blue Bottle shipment features &amp;ldquo;Ethiopia Guji Suke Quto&amp;rdquo;, described by Blue Bottle here:
 The 68-member Suke Quto producer’s association is located in the Odo Shakiso district, in Ethiopia’s Guji zone. Founded in 2004, Suke Quto stretches across a verdant 291 hectares and includes a diverse array of indigenous plant and animal species. After being hand-picked at its apex of ripeness, this coffee is fermented in concrete tanks, washed, and sun-dried on raised beds.</description>
     </item>
