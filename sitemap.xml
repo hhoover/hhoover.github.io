@@ -1,10 +1,50 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://harthoover.com/</loc>
+    <lastmod>2019-04-08T09:10:47-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://harthoover.com/tags/kubernetes/</loc>
+    <lastmod>2019-04-08T09:10:47-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://harthoover.com/tags/podcast/</loc>
+    <lastmod>2019-04-08T09:10:47-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://harthoover.com/post/</loc>
+    <lastmod>2019-04-08T09:10:47-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://harthoover.com/tags/san-antonio/</loc>
+    <lastmod>2019-04-08T09:10:47-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://harthoover.com/tags/</loc>
+    <lastmod>2019-04-08T09:10:47-06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://harthoover.com/whats-new-in-2019/</loc>
     <lastmod>2019-04-08T09:10:47-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://harthoover.com/tags/work/</loc>
+    <lastmod>2019-04-08T09:10:47-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://harthoover.com/tags/meetups/</loc>
+    <lastmod>2019-01-07T09:10:47-06:00</lastmod>
   </url>
   
   <url>
@@ -13,8 +53,28 @@
   </url>
   
   <url>
+    <loc>https://harthoover.com/tags/cicd/</loc>
+    <lastmod>2018-09-07T11:19:46-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://harthoover.com/tags/docker/</loc>
+    <lastmod>2018-09-07T11:19:46-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://harthoover.com/using-kaniko-for-container-builds-on-kubernetes/</loc>
     <lastmod>2018-09-07T11:19:46-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://harthoover.com/tags/fiesta/</loc>
+    <lastmod>2018-04-25T09:57:59-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://harthoover.com/tags/geekdom/</loc>
+    <lastmod>2018-04-25T09:57:59-05:00</lastmod>
   </url>
   
   <url>
@@ -33,6 +93,11 @@
   </url>
   
   <url>
+    <loc>https://harthoover.com/tags/raspberrypi/</loc>
+    <lastmod>2018-02-22T14:05:28-06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://harthoover.com/fixing-a-broken-kubernetes-api-server/</loc>
     <lastmod>2018-02-13T09:27:07-06:00</lastmod>
   </url>
@@ -43,7 +108,22 @@
   </url>
   
   <url>
+    <loc>https://harthoover.com/tags/alertmanager/</loc>
+    <lastmod>2018-02-01T10:43:53-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://harthoover.com/tags/monitoring/</loc>
+    <lastmod>2018-02-01T10:43:53-06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://harthoover.com/pretty-alertmanager-alerts-in-slack/</loc>
+    <lastmod>2018-02-01T10:43:53-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://harthoover.com/tags/prometheus/</loc>
     <lastmod>2018-02-01T10:43:53-06:00</lastmod>
   </url>
   
@@ -60,6 +140,16 @@
   <url>
     <loc>https://harthoover.com/touring-katz-coffee/</loc>
     <lastmod>2015-09-07T02:31:45+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://harthoover.com/tags/roasting/</loc>
+    <lastmod>2015-09-03T03:04:32+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://harthoover.com/tags/sabbatical/</loc>
+    <lastmod>2015-09-03T03:04:32+00:00</lastmod>
   </url>
   
   <url>
@@ -88,8 +178,18 @@
   </url>
   
   <url>
+    <loc>https://harthoover.com/tags/purocafe/</loc>
+    <lastmod>2015-07-17T13:17:24+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://harthoover.com/best-san-antonio-coffee-shops/</loc>
     <lastmod>2015-06-23T15:16:23+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://harthoover.com/tags/chemex/</loc>
+    <lastmod>2015-06-12T14:41:15+00:00</lastmod>
   </url>
   
   <url>
@@ -100,6 +200,11 @@
   <url>
     <loc>https://harthoover.com/chemex-recipe/</loc>
     <lastmod>2015-06-01T12:40:48+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://harthoover.com/tags/kalita/</loc>
+    <lastmod>2015-05-29T19:31:49+00:00</lastmod>
   </url>
   
   <url>
@@ -118,6 +223,16 @@
   </url>
   
   <url>
+    <loc>https://harthoover.com/tags/brewing/</loc>
+    <lastmod>2015-04-04T20:37:13+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://harthoover.com/tags/shops/</loc>
+    <lastmod>2015-03-24T20:19:20+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://harthoover.com/top-15-san-antonio-coffee-shops/</loc>
     <lastmod>2015-03-24T20:19:20+00:00</lastmod>
   </url>
@@ -125,6 +240,21 @@
   <url>
     <loc>https://harthoover.com/giant-steps-blue-bottle/</loc>
     <lastmod>2015-03-24T20:06:18+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://harthoover.com/tags/peru/</loc>
+    <lastmod>2015-03-24T20:06:18+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://harthoover.com/tags/africa/</loc>
+    <lastmod>2015-03-18T14:49:07+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://harthoover.com/tags/blend/</loc>
+    <lastmod>2015-03-18T14:49:07+00:00</lastmod>
   </url>
   
   <url>
@@ -143,6 +273,11 @@
   </url>
   
   <url>
+    <loc>https://harthoover.com/tags/colombia/</loc>
+    <lastmod>2015-02-12T22:15:06+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://harthoover.com/colombia-first-ascent/</loc>
     <lastmod>2015-02-12T22:15:06+00:00</lastmod>
   </url>
@@ -153,8 +288,23 @@
   </url>
   
   <url>
+    <loc>https://harthoover.com/tags/ethipoia/</loc>
+    <lastmod>2015-02-12T15:43:54+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://harthoover.com/tags/burundi/</loc>
+    <lastmod>2015-02-11T14:03:45+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://harthoover.com/burundi-kalico-merit/</loc>
     <lastmod>2015-02-11T14:03:45+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://harthoover.com/tags/rwanada/</loc>
+    <lastmod>2015-02-02T15:43:48+00:00</lastmod>
   </url>
   
   <url>
@@ -168,8 +318,23 @@
   </url>
   
   <url>
+    <loc>https://harthoover.com/tags/espresso/</loc>
+    <lastmod>2015-01-11T23:48:40+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://harthoover.com/flat-white-starbucks/</loc>
     <lastmod>2015-01-11T23:48:40+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://harthoover.com/tags/starbucks/</loc>
+    <lastmod>2015-01-11T23:48:40+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://harthoover.com/tags/iced/</loc>
+    <lastmod>2015-01-08T01:04:00+00:00</lastmod>
   </url>
   
   <url>
@@ -183,6 +348,16 @@
   </url>
   
   <url>
+    <loc>https://harthoover.com/tags/el-salvador/</loc>
+    <lastmod>2015-01-03T17:23:18+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://harthoover.com/tags/french-press/</loc>
+    <lastmod>2015-01-03T17:23:18+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://harthoover.com/reserva-cuvee/</loc>
     <lastmod>2015-01-03T17:23:18+00:00</lastmod>
   </url>
@@ -193,7 +368,22 @@
   </url>
   
   <url>
+    <loc>https://harthoover.com/tags/costa-rica/</loc>
+    <lastmod>2015-01-02T21:07:12+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://harthoover.com/black-blue-cuv%C3%A9e/</loc>
+    <lastmod>2015-01-01T18:40:14+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://harthoover.com/tags/coldbrew/</loc>
+    <lastmod>2015-01-01T18:40:14+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://harthoover.com/tags/retail/</loc>
     <lastmod>2015-01-01T18:40:14+00:00</lastmod>
   </url>
   
@@ -204,244 +394,15 @@
   
   <url>
     <loc>https://harthoover.com/assets/img/readme/</loc>
-  </url>
-  
-  <url>
-    <loc>https://harthoover.com/tags/africa/</loc>
-    <lastmod>2015-03-18T14:49:07+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://harthoover.com/tags/alertmanager/</loc>
-    <lastmod>2018-02-01T10:43:53-06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://harthoover.com/assets/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://harthoover.com/tags/blend/</loc>
-    <lastmod>2015-03-18T14:49:07+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://harthoover.com/tags/brewing/</loc>
-    <lastmod>2015-04-04T20:37:13+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://harthoover.com/tags/burundi/</loc>
-    <lastmod>2015-02-11T14:03:45+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://harthoover.com/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://harthoover.com/tags/chemex/</loc>
-    <lastmod>2015-06-12T14:41:15+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://harthoover.com/tags/cicd/</loc>
-    <lastmod>2018-09-07T11:19:46-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://harthoover.com/tags/coldbrew/</loc>
-    <lastmod>2015-01-01T18:40:14+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://harthoover.com/tags/colombia/</loc>
-    <lastmod>2015-02-12T22:15:06+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://harthoover.com/tags/costa-rica/</loc>
-    <lastmod>2015-01-02T21:07:12+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://harthoover.com/tags/docker/</loc>
-    <lastmod>2018-09-07T11:19:46-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://harthoover.com/tags/el-salvador/</loc>
-    <lastmod>2015-01-03T17:23:18+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://harthoover.com/tags/espresso/</loc>
-    <lastmod>2015-01-11T23:48:40+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://harthoover.com/tags/ethipoia/</loc>
-    <lastmod>2015-02-12T15:43:54+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://harthoover.com/tags/fiesta/</loc>
-    <lastmod>2018-04-25T09:57:59-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://harthoover.com/tags/french-press/</loc>
-    <lastmod>2015-01-03T17:23:18+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://harthoover.com/tags/geekdom/</loc>
-    <lastmod>2018-04-25T09:57:59-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://harthoover.com/</loc>
-    <lastmod>2019-04-08T09:10:47-06:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://harthoover.com/tags/iced/</loc>
-    <lastmod>2015-01-08T01:04:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://harthoover.com/tags/kalita/</loc>
-    <lastmod>2015-05-29T19:31:49+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://harthoover.com/tags/kubernetes/</loc>
-    <lastmod>2019-04-08T09:10:47-06:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://harthoover.com/tags/meetups/</loc>
-    <lastmod>2019-01-07T09:10:47-06:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://harthoover.com/tags/monitoring/</loc>
-    <lastmod>2018-02-01T10:43:53-06:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://harthoover.com/tags/peru/</loc>
-    <lastmod>2015-03-24T20:06:18+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://harthoover.com/tags/podcast/</loc>
-    <lastmod>2019-04-08T09:10:47-06:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://harthoover.com/post/</loc>
-    <lastmod>2019-04-08T09:10:47-06:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://harthoover.com/tags/prometheus/</loc>
-    <lastmod>2018-02-01T10:43:53-06:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://harthoover.com/tags/purocafe/</loc>
-    <lastmod>2015-07-17T13:17:24+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://harthoover.com/tags/raspberrypi/</loc>
-    <lastmod>2018-02-22T14:05:28-06:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://harthoover.com/tags/retail/</loc>
-    <lastmod>2015-01-01T18:40:14+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://harthoover.com/tags/roasting/</loc>
-    <lastmod>2015-09-03T03:04:32+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://harthoover.com/tags/rwanada/</loc>
-    <lastmod>2015-02-02T15:43:48+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://harthoover.com/tags/sabbatical/</loc>
-    <lastmod>2015-09-03T03:04:32+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://harthoover.com/tags/san-antonio/</loc>
-    <lastmod>2019-04-08T09:10:47-06:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://harthoover.com/tags/shops/</loc>
-    <lastmod>2015-03-24T20:19:20+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://harthoover.com/tags/starbucks/</loc>
-    <lastmod>2015-01-11T23:48:40+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://harthoover.com/tags/</loc>
-    <lastmod>2015-03-18T14:49:07+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://harthoover.com/tags/work/</loc>
-    <lastmod>2019-04-08T09:10:47-06:00</lastmod>
-    <priority>0</priority>
   </url>
   
 </urlset>
