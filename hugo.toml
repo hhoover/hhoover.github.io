@@ -12,7 +12,7 @@ disableKinds = ["taxonomy", "term"]
   links = [
     { linkedin = "https://linkedin.com/in/harthoover" },
     { github = "https://github.com/hhoover" },
-    { bluesky = "https://bluesky.com/harthoover.com" },
+    { bluesky = "https://bsky.app/profile/harthoover.com" },
     { youtube = "https://www.youtube.com/@AceOfHarts" },
     { instagram = "https://instagram.com/harthoover" },
     { signal = { icon = "signal", href="https://signal.me/#eu/ignUk4e7qzgFRg2lxNg-b1IUOlA_oTX9DVKIlD2aGFrnFePJeHdF-bsGNVJERfEi", text = "Signal" } },
