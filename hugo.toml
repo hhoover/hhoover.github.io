@@ -16,7 +16,6 @@ disableKinds = ["taxonomy", "term"]
     { youtube = "https://www.youtube.com/@AceOfHarts" },
     { instagram = "https://instagram.com/harthoover" },
     { signal = { icon = "signal", href="https://signal.me/#eu/ignUk4e7qzgFRg2lxNg-b1IUOlA_oTX9DVKIlD2aGFrnFePJeHdF-bsGNVJERfEi", text = "Signal" } },
-    { gamepad = { href = "https://www.extra-life.org/index.cfm?fuseaction=donorDrive.participant&participantID=551126", text = "Donate to ExtraLife" } },
   ]
 
 [markup.highlight]
