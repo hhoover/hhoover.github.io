@@ -1,6 +1,7 @@
 baseURL = 'https://harthoover.com/'
-languageCode = 'en-us'
+locale = 'en-us'
 title = 'Hart Hoover'
+copyright = 'Hart Hoover'
 
 enableEmoji = true
 disableKinds = ["taxonomy", "term"]
