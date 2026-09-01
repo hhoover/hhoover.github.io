@@ -77,19 +77,13 @@ body {
 
 .hero { text-align: center; }
 
-.avatar-ring {
-  display: inline-block;
-  padding: 4px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, var(--accent-1), var(--accent-2), var(--accent-3));
-}
-
 .avatar {
   display: block;
   width: 120px;
   height: 120px;
+  margin: 0 auto;
   border-radius: 50%;
-  border: 4px solid var(--bg);
+  border: 1px solid var(--border);
 }
 
 .prompt {
@@ -119,11 +113,7 @@ h1 {
   font-size: clamp(2.2rem, 7vw, 3rem);
   font-weight: 800;
   letter-spacing: -0.03em;
-  background: linear-gradient(100deg, var(--text) 30%, var(--accent-1) 75%, var(--accent-3));
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
+  color: var(--text);
 }
 
 .tagline {
@@ -195,6 +185,10 @@ h1 {
   gap: 12px;
 }
 
+.link-full {
+  grid-column: 1 / -1;
+}
+
 @media (max-width: 520px) {
   .links { grid-template-columns: 1fr; }
 }
@@ -249,6 +243,7 @@ h1 {
 
 .link-github    { --brand: #c9d1d9; }
 .link-linkedin  { --brand: #0a66c2; }
+.link-x         { --brand: #e6e9ef; }
 .link-bluesky   { --brand: #0285ff; }
 .link-youtube   { --brand: #ff3333; }
 .link-instagram { --brand: #e4405f; }
